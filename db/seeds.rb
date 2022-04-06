@@ -20,7 +20,8 @@ Paladin = Job.create(name: "Paladin", role: "tank",
 
 Warrior = Job.create(name: "Guerrier", role: "tank",
         level: "30", acronym: "WAR")
-        Warrior.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Warrior.png')), filename: 'Warrior.png')
+        Warrior.icon.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Warrior.png')), filename: 'Warrior.png')
+        Warrior.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/war.png')), filename: 'war.png')
 
 DarkKnight = Job.create(name: "Chevalier Noir", role: "tank",
         level: "30", acronym: "DRK")

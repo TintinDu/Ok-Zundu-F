@@ -1,12 +1,9 @@
 <div class="cards">
-  <% @tanks.each do |tank| %>
-    <div class="card-raid">
-      <%= link_to "#{tank.name} - #{tank.acronym}", job_path(tank), style: "margin-bottom: 3em" %>
-      <% if tank.image.key %>
-        <%= link_to cl_image_tag(tank.image.key), job_path(tank), class: "icons" %>
-      <% else %>
-        <%= link_to image_tag("rescue.png"), job_path(tank), class: "icons" %>
-      <% end %>
-    </div>
-  <% end %>
+  <%= link_to " ", jobs_path(:name=>"Paladin"), class: "card-raid tank" %>
+
+  <%= link_to " ", jobs_path(:name=>"Guerrier"), class: "card-raid war" %>
+
+  <%= link_to " ", jobs_path(:name=>"Chevalier Noir"), class: "card-raid melee" %>
+
+  <%= link_to " ", jobs_path(:name=>"Pistosabreur"), class: "card-raid ranged " %>
 </div>
