@@ -1,0 +1,7 @@
+<%= simple_form_for(raid, remote: true) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :level, collection: [50, 60, 70, 80, 90] %>
+  <%= f.select :difficulty, collection: ["Extrême", "Sadique", "Fatal"] %>
+  <%= f.select :expansion, collection: ["A Realm Reborn", "Heavensward", "Stormblood", "Shadowbringers", "Endwalker"] %>
+  <%= f.submit %>
+<% end %>

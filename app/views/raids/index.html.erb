@@ -1,0 +1,71 @@
+<div data-controller="insert-in-list">
+  <div data-insert-in-list-target="items">
+    <div class="cards-index">
+      <% @raids.where(expansion: "A Realm Reborn", difficulty: "sadique").each do |raid| %>
+        <div class="card-raid bahamut">
+          <%= link_to raid.name, raid_path(raid), class: "btn btn-ghost" %>
+        </div>
+      <% end %>
+      <% @raids.where(expansion: "Heavensward", difficulty: "sadique").each do |raid| %>
+        <div class="card-raid alexander">
+          <%= link_to raid.name, raid_path(raid), class: "btn btn-ghost" %>
+        </div>
+      <% end %>
+      <% @raids.where(expansion: "Stormblood", difficulty: "sadique").each do |raid| %>
+        <div class="card-raid omega">
+          <%= link_to raid.name, raid_path(raid), class: "btn btn-ghost" %>
+        </div>
+      <% end %>
+      <% @raids.where(expansion: "Shadowbringers", difficulty: "sadique").each do |raid| %>
+        <div class="card-raid eden">
+          <%= link_to raid.name, raid_path(raid), class: "btn btn-ghost" %>
+        </div>
+      <% end %>
+      <% @raids.where(expansion: "Endwalker", difficulty: "sadique").each do |raid| %>
+        <div class="card-raid pandaemonium">
+          <%= link_to raid.name, raid_path(raid), class: "btn btn-ghost" %>
+        </div>
+      <% end %>
+      <% @raids.where(expansion: "A Realm Reborn", difficulty: "extreme").each do |raid| %>
+        <div class="card-raid bahamut">
+          <%= link_to raid.name, raid_path(raid), class: "btn btn-ghost" %>
+        </div>
+      <% end %>
+      <% @raids.where(expansion: "Heavensward", difficulty: "extreme").each do |raid| %>
+        <div class="card-raid alexander">
+          <%= link_to raid.name, raid_path(raid), class: "btn btn-ghost" %>
+        </div>
+      <% end %>
+      <% @raids.where(expansion: "Stormblood", difficulty: "extreme").each do |raid| %>
+        <div class="card-raid omega">
+          <%= link_to raid.name, raid_path(raid), class: "btn btn-ghost" %>
+        </div>
+      <% end %>
+      <% @raids.where(expansion: "Shadowbringers", difficulty: "extreme").each do |raid| %>
+        <div class="card-raid eden">
+          <%= link_to raid.name, raid_path(raid), class: "btn btn-ghost" %>
+        </div>
+      <% end %>
+      <% @raids.where(expansion: "Endwalker", difficulty: "extreme").each do |raid| %>
+        <div class="card-raid pandaemonium">
+          <%= link_to raid.name, raid_path(raid), class: "btn btn-ghost" %>
+        </div>
+      <% end %>
+      <% @raids.where(expansion: "Stormblood", difficulty: "fatal").each do |raid| %>
+        <div class="card-raid ucob">
+          <%= link_to raid.name, raid_path(raid), class: "btn btn-ghost" %>
+        </div>
+      <% end %>
+      <% @raids.where(expansion: "Shadowbringers", difficulty: "fatal").each do |raid| %>
+        <div class="card-raid alexander">
+          <%= link_to raid.name, raid_path(raid), class: "btn btn-ghost" %>
+        </div>
+      <% end %>
+      <% @raids.where(expansion: "Endwalker", difficulty: "fatal").each do |raid| %>
+        <div class="card-raid pandaemonium">
+          <%= link_to raid.name, raid_path(raid), class: "btn btn-ghost" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

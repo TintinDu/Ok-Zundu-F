@@ -1,0 +1,14 @@
+
+
+<div class="cards">
+  <% @jobs.each do |job| %>
+    <div class="card-raid">
+      <%= link_to "#{job.name} - #{job.acronym}", job_path(job), style: "margin-bottom: 3em" %>
+      <% if job.image.key %>
+        <%= link_to cl_image_tag(job.image.key), job_path(job), class: "icons" %>
+      <% else %>
+        <%= link_to image_tag("rescue.png"), job_path(job), class: "icons" %>
+      <% end %>
+    </div>
+  <% end %>
+</div>

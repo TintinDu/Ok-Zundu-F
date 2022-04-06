@@ -1,0 +1,12 @@
+<div class="cards">
+  <% @melees.each do |melee| %>
+    <div class="card-raid">
+      <%= link_to "#{melee.name} - #{melee.acronym}", job_path(melee), style: "margin-bottom: 3em" %>
+      <% if melee.image.key %>
+        <%= link_to cl_image_tag(melee.image.key), job_path(melee), class: "icons" %>
+      <% else %>
+        <%= link_to image_tag("rescue.png"), job_path(melee), class: "icons" %>
+      <% end %>
+    </div>
+  <% end %>
+</div>

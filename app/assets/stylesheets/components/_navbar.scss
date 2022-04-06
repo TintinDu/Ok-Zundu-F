@@ -1,0 +1,30 @@
+.navbar-lewagon {
+  background-color: transparent;
+  transition: 0s background-color ease;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.navbar-lewagon .navbar-brand img:hover {
+  opacity: 0.5;
+}
+
+.avatar-layout {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.navbar-lewagon-white {
+  background-color: white;
+}

@@ -1,0 +1,37 @@
+<div class="text-center m-4">
+  <h3> Des guides pour vos prochains raids </h3>
+</div>
+
+<div class="cards">
+
+  <%= link_to " ", raids_path(:difficulty=>"extreme"), class: "card-raid extreme" %>
+
+  <%= link_to " ", raids_path(:difficulty=>"sadique"), class: "card-raid sadique" %>
+
+  <%= link_to " ", raids_path(:difficulty=>"fatal"), class: "card-raid fatal" %>
+
+</div>
+
+<div class="text-center m-4">
+  <h3> Des guides pour vos jobs </h3>
+</div>
+
+<div class="cards">
+
+  <%= link_to " ", jobs_path(:role=>"tank"), class: "card-raid tank" %>
+
+  <%= link_to " ", jobs_path(:role=>"healer"), class: "card-raid healer" %>
+
+  <%= link_to " ", jobs_path(:role=>"melee"), class: "card-raid melee" %>
+
+  <%= link_to " ", jobs_path(:role=>"distance"), class: "card-raid ranged " %>
+
+  <%= link_to " ", jobs_path(:role=>"caster"), class: "card-raid caster" %>
+
+  <%= link_to " ", jobs_path, class: "card-raid blue-mage" %>
+
+</div>
+
+<div class="container-fluid text-center" style="margin-top: 2em">
+  <h5><span data-controller="typed-js"></h5>
+</div>
