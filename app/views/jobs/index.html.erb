@@ -1,14 +1,39 @@
-
-
 <div class="cards">
-  <% @jobs.each do |job| %>
-    <div class="card-raid">
-      <%= link_to "#{job.name} - #{job.acronym}", job_path(job), style: "margin-bottom: 3em" %>
-      <% if job.image.key %>
-        <%= link_to cl_image_tag(job.image.key), job_path(job), class: "icons" %>
-      <% else %>
-        <%= link_to image_tag("rescue.png"), job_path(job), class: "icons" %>
-      <% end %>
-    </div>
-  <% end %>
+  <%= link_to " ", jobs_path(:name=>"Paladin"), class: "card-raid pld" %>
+
+  <%= link_to " ", jobs_path(:name=>"Guerrier"), class: "card-raid war" %>
+
+  <%= link_to " ", jobs_path(:name=>"Chevalier Noir"), class: "card-raid drk" %>
+
+  <%= link_to " ", jobs_path(:name=>"Pistosabreur"), class: "card-raid gnb" %>
+
+  <%= link_to " ", jobs_path(:name=>"Mage Blanc"), class: "card-raid whm" %>
+
+  <%= link_to " ", jobs_path(:name=>"Erudit"), class: "card-raid sch" %>
+
+  <%= link_to " ", jobs_path(:name=>"Astromancien"), class: "card-raid ast" %>
+
+  <%= link_to " ", jobs_path(:name=>"Sage"), class: "card-raid sge" %>
+
+  <%= link_to " ", jobs_path(:name=>"Moine"), class: "card-raid mnk" %>
+
+  <%= link_to " ", jobs_path(:name=>"Chevalier Dragon"), class: "card-raid drg" %>
+
+  <%= link_to " ", jobs_path(:name=>"Ninja"), class: "card-raid nin" %>
+
+  <%= link_to " ", jobs_path(:name=>"Samouraï"), class: "card-raid sam" %>
+
+  <%= link_to " ", jobs_path(:name=>"Faucheur"), class: "card-raid rpr" %>
+
+  <%= link_to " ", jobs_path(:name=>"Barde"), class: "card-raid brd" %>
+
+  <%= link_to " ", jobs_path(:name=>"Machiniste"), class: "card-raid mch" %>
+
+  <%= link_to " ", jobs_path(:name=>"Danseur"), class: "card-raid dnc" %>
+
+  <%= link_to " ", jobs_path(:name=>"Mage Noir"), class: "card-raid blm" %>
+
+  <%= link_to " ", jobs_path(:name=>"Mage Rouge"), class: "card-raid rdm" %>
+
+  <%= link_to " ", jobs_path(:name=>"Invocateur"), class: "card-raid smn" %>
 </div>

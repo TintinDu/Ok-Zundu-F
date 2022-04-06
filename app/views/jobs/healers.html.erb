@@ -1,12 +1,9 @@
 <div class="cards">
-  <% @healers.each do |healer| %>
-    <div class="card-raid">
-      <%= link_to "#{healer.name} - #{healer.acronym}", job_path(healer), style: "margin-bottom: 3em" %>
-      <% if healer.image.key %>
-        <%= link_to cl_image_tag(healer.image.key), job_path(healer), class: "icons" %>
-      <% else %>
-        <%= link_to image_tag("rescue.png"), job_path(healer), class: "icons" %>
-      <% end %>
-    </div>
-  <% end %>
+  <%= link_to " ", jobs_path(:name=>"Mage Blanc"), class: "card-raid whm" %>
+
+  <%= link_to " ", jobs_path(:name=>"Erudit"), class: "card-raid sch" %>
+
+  <%= link_to " ", jobs_path(:name=>"Astromancien"), class: "card-raid ast" %>
+
+  <%= link_to " ", jobs_path(:name=>"Sage"), class: "card-raid sge" %>
 </div>

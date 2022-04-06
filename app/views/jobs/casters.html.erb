@@ -1,12 +1,7 @@
 <div class="cards">
-  <% @casters.each do |caster| %>
-    <div class="card-raid">
-      <%= link_to "#{caster.name} - #{caster.acronym}", job_path(caster), style: "margin-bottom: 3em" %>
-      <% if caster.image.key %>
-        <%= link_to cl_image_tag(caster.image.key), job_path(caster), class: "icons" %>
-      <% else %>
-        <%= link_to image_tag("rescue.png"), job_path(caster), class: "icons" %>
-      <% end %>
-    </div>
-  <% end %>
+  <%= link_to " ", jobs_path(:name=>"Mage Noir"), class: "card-raid blm" %>
+
+  <%= link_to " ", jobs_path(:name=>"Mage Rouge"), class: "card-raid rdm" %>
+
+  <%= link_to " ", jobs_path(:name=>"Invocateur"), class: "card-raid smn" %>
 </div>

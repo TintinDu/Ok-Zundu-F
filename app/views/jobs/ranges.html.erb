@@ -1,12 +1,7 @@
 <div class="cards">
-  <% @ranges.each do |range| %>
-    <div class="card-raid">
-      <%= link_to "#{range.name} - #{range.acronym}", job_path(range), style: "margin-bottom: 3em" %>
-      <% if range.image.key %>
-        <%= link_to cl_image_tag(range.image.key), job_path(range), class: "icons" %>
-      <% else %>
-        <%= link_to image_tag("rescue.png"), job_path(range), class: "icons" %>
-      <% end %>
-    </div>
-  <% end %>
+  <%= link_to " ", jobs_path(:name=>"Barde"), class: "card-raid brd" %>
+
+  <%= link_to " ", jobs_path(:name=>"Machiniste"), class: "card-raid mch" %>
+
+  <%= link_to " ", jobs_path(:name=>"Danseur"), class: "card-raid dnc" %>
 </div>
