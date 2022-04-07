@@ -7,7 +7,6 @@
   color: black;
   padding: 8px;
   margin: 8px;
-  opacity: .7;
   cursor: pointer;
   text-decoration: none;
   border-bottom: 4px solid transparent;
@@ -20,7 +19,7 @@
 
 .tab-underlined:hover {
   color: black;
-  opacity: 1;
+  opacity: 0.9;
 }
 
 .tab-underlined img {
