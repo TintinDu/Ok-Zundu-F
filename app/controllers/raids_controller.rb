@@ -58,7 +58,7 @@ class RaidsController < ApplicationController
   private
 
   def raid_params
-    params.require(:raid).permit(:name, :level, :type)
+    params.require(:raid).permit(:name, :level, :difficulty, :expansion)
   end
 
   def set_raid

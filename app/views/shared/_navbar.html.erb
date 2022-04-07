@@ -5,7 +5,7 @@
     <% end %>
 
     <% if current_page?(raids_path) %>
-      <div class="search-form" id="form">
+      <div class="search-form" id="form-raid">
         <%= form_tag raids_path, method: :get do %>
           <%= text_field_tag :query,
             params[:query],
@@ -17,9 +17,8 @@
           </button>
         <% end %>
       </div>
-      <% end %>
-    <% if current_page?(jobs_path) %>
-      <div class="search-form" id="form">
+    <% elsif current_page?(jobs_path) %>
+      <div class="search-form" id="form-job">
         <%= form_tag jobs_path, method: :get do %>
           <%= text_field_tag :query,
             params[:query],

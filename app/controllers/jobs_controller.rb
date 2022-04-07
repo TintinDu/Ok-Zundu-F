@@ -2,6 +2,16 @@ class JobsController < ApplicationController
   include CloudinaryHelper
   before_action :set_job, only: [:show ]
 
+  def show
+    if params[:query].present?
+      sql_query = "name ILIKE :query OR acronym ILIKE :query"
+      @jobs = Job.where(sql_query, query: "%#{params[:query]}%")
+    elsif params[:role]
+      @jobs = Job.where(:role => params[:role])
+    end
+    set_job
+  end
+
   def index
     if params[:query].present?
       sql_query = "name ILIKE :query OR acronym ILIKE :query"
@@ -13,15 +23,6 @@ class JobsController < ApplicationController
     end
   end
 
-  def show
-    if params[:query].present?
-      sql_query = "name ILIKE :query OR acronym ILIKE :query"
-      @jobs = Job.where(sql_query, query: "%#{params[:query]}%")
-    elsif params[:role]
-      @jobs = Job.where(:role => params[:role])
-    end
-    set_job
-  end
 
   def tanks
     @tanks = Job.where(role: "tank")
