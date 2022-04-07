@@ -18,15 +18,15 @@
 
 <div class="cards">
 
-  <%= link_to " ", jobs_path(:role=>"tank"), class: "card-raid tank" %>
+  <%= link_to " ", tanks_jobs_path, class: "card-raid tank" %>
 
-  <%= link_to " ", jobs_path(:role=>"healer"), class: "card-raid healer" %>
+  <%= link_to " ", healers_jobs_path, class: "card-raid healer" %>
 
-  <%= link_to " ", jobs_path(:role=>"melee"), class: "card-raid melee" %>
+  <%= link_to " ", melees_jobs_path, class: "card-raid melee" %>
 
-  <%= link_to " ", jobs_path(:role=>"distance"), class: "card-raid ranged " %>
+  <%= link_to " ", ranges_jobs_path, class: "card-raid ranged " %>
 
-  <%= link_to " ", jobs_path(:role=>"caster"), class: "card-raid caster" %>
+  <%= link_to " ", casters_jobs_path, class: "card-raid caster" %>
 
   <%= link_to " ", jobs_path, class: "card-raid blue-mage" %>
 
