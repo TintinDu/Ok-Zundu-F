@@ -10,50 +10,13 @@
     <% end %>
   </ul>
 
-  <% if @raid.guides.blank? %>
-    <p>Sois la première personne à écrire un guide pour <%= @raid.name %></p>
-    <%= simple_form_for([ @raid, @guide ], remote: true) do |f| %>
-      <%= f.input :content, as: :text, label: "Guide", placeholder: "Le boss commence par..." %>
-      <%= f.submit "Envoyer", class: "btn btn-primary" %>
-    <% end %>
-  <% else %>
-    <p>Il y a déjà <%= @raid.guides.count %> guides pour <%= @raid.name %> mais tu peux en proposer un !</p>
-    <%= simple_form_for([ @raid, @guide ], remote: true) do |f| %>
-      <%= f.input :content, as: :text, label: "Guide", placeholder: "Le boss commence par..." %>
-      <%= f.submit "Envoyer", class: "btn btn-primary" %>
-    <% end %>
-  <% end %>
   <br>
   | <%= link_to 'Retour', raids_path %> |
 
+</div>
 
-  <div class="cards-index">
-    <% Raid.where(expansion: @raid.expansion).each do |raid| %>
-    <% if raid.expansion == "A Realm Reborn" %>
-      <div class="card-raid bahamut">
-        <%= link_to raid.name, raid_path(raid), class: "btn btn-ghost" %>
-      </div>
-    <% elsif raid.expansion == "Heavensward" %>
-      <div class="card-raid alexander">
-        <%= link_to raid.name, raid_path(raid), class: "btn btn-ghost" %>
-      </div>
-    <% elsif raid.expansion == "Stormblood" && raid.difficulty == "sadique" %>
-      <div class="card-raid omega">
-        <%= link_to raid.name, raid_path(raid), class: "btn btn-ghost" %>
-      </div>
-    <% elsif raid.expansion == "Shadowbringers" %>
-      <div class="card-raid eden">
-        <%= link_to raid.name, raid_path(raid), class: "btn btn-ghost" %>
-      </div>
-    <% elsif raid.expansion == "Endwalker" %>
-      <div class="card-raid pandaemonium">
-          <%= link_to raid.name, raid_path(raid), class: "btn btn-ghost" %>
-        </div>
-    <% else %>
-      <div class="card-raid ucob">
-        <%= link_to raid.name, raid_path(raid), class: "btn btn-ghost" %>
-      </div>
-    <% end %>
-    <% end %>
-  </div>
+<div class="cards-index">
+  <% Raid.where(expansion: @raid.expansion).each do |raid| %>
+    <%= link_to cl_image_tag(raid.image.key), raid_path(raid), class: "card-raid"%>
+  <% end %>
 </div>

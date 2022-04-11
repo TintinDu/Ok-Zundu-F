@@ -12,98 +12,98 @@ User.destroy_all
 puts "Création des jobs..."
 Paladin = Job.create(name: "Paladin", role: "tank",
         level: "30", acronym: "PLD")
-        Paladin.icon.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Paladin.png')), filename: 'Paladin.png')
-        Paladin.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/pld.png')), filename: 'pld.png')
+        Paladin.icon.attach(io: File.open(File.join(Rails.root, 'app/assets/images/icons/Paladin.png')), filename: 'Paladin.png')
+        Paladin.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/JobsArts/pld.png')), filename: 'pld.png')
 
 Warrior = Job.create(name: "Guerrier", role: "tank",
         level: "30", acronym: "WAR")
-        Warrior.icon.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Warrior.png')), filename: 'Warrior.png')
-        Warrior.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/war.png')), filename: 'war.png')
+        Warrior.icon.attach(io: File.open(File.join(Rails.root, 'app/assets/images/icons/Warrior.png')), filename: 'Warrior.png')
+        Warrior.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/JobsArts/war.png')), filename: 'war.png')
 
 DarkKnight = Job.create(name: "Chevalier Noir", role: "tank",
         level: "30", acronym: "DRK")
-        DarkKnight.icon.attach(io: File.open(File.join(Rails.root, 'app/assets/images/DarkKnight.png')), filename: 'DarkKnight.png')
-        DarkKnight.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/drk.png')), filename: 'drk.png')
+        DarkKnight.icon.attach(io: File.open(File.join(Rails.root, 'app/assets/images/icons/DarkKnight.png')), filename: 'DarkKnight.png')
+        DarkKnight.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/JobsArts/drk.png')), filename: 'drk.png')
 
 Gunbreaker = Job.create(name: "Pistosabreur", role: "tank",
         level: "60", acronym: "GNB")
-        Gunbreaker.icon.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Gunbreaker.png')), filename: 'Gunbreaker.png')
-        Gunbreaker.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/gnb.png')), filename: 'gnb.png')
+        Gunbreaker.icon.attach(io: File.open(File.join(Rails.root, 'app/assets/images/icons/Gunbreaker.png')), filename: 'Gunbreaker.png')
+        Gunbreaker.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/JobsArts/gnb.png')), filename: 'gnb.png')
 
 WhiteMage = Job.create(name: "Mage Blanc", role: "healer",
         level: "30", acronym: "WHM")
-        WhiteMage.icon.attach(io: File.open(File.join(Rails.root, 'app/assets/images/WhiteMage.png')), filename: 'WhiteMage.png')
-        WhiteMage.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/whm.jpeg')), filename: 'whm.jpeg')
+        WhiteMage.icon.attach(io: File.open(File.join(Rails.root, 'app/assets/images/icons/WhiteMage.png')), filename: 'WhiteMage.png')
+        WhiteMage.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/JobsArts/whm.jpeg')), filename: 'whm.jpeg')
 
 Scholar = Job.create(name: "Erudit", role: "healer",
         level: "30", acronym: "SCH")
-        Scholar.icon.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Scholar.png')), filename: 'Scholar.png')
-        Scholar.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/sch.png')), filename: 'sch.png')
+        Scholar.icon.attach(io: File.open(File.join(Rails.root, 'app/assets/images/icons/Scholar.png')), filename: 'Scholar.png')
+        Scholar.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/JobsArts/sch.png')), filename: 'sch.png')
 
 Astrologian = Job.create(name: "Astromancien", role: "healer",
         level: "30", acronym: "AST")
-        Astrologian.icon.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Astrologian.png')), filename: 'Astrologian.png')
-        Astrologian.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/ast.png')), filename: 'ast.png')
+        Astrologian.icon.attach(io: File.open(File.join(Rails.root, 'app/assets/images/icons/Astrologian.png')), filename: 'Astrologian.png')
+        Astrologian.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/JobsArts/ast.png')), filename: 'ast.png')
 
 Sage = Job.create(name: "Sage", role: "healer",
         level: "70", acronym: "SGE")
-        Sage.icon.attach(io: File.open(File.join(Rails.root, 'app/assets/images/HealerRole.png')), filename: 'HealerRole.png')
-        Sage.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/sge.png')), filename: 'sge.png')
+        Sage.icon.attach(io: File.open(File.join(Rails.root, 'app/assets/images/icons/HealerRole.png')), filename: 'HealerRole.png')
+        Sage.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/JobsArts/sge.png')), filename: 'sge.png')
 
 Monk = Job.create(name: "Moine", role: "melee",
         level: "30", acronym: "MNK")
-        Monk.icon.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Monk.png')), filename: 'Monk.png')
-        Monk.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/mnk.png')), filename: 'mnk.png')
+        Monk.icon.attach(io: File.open(File.join(Rails.root, 'app/assets/images/icons/Monk.png')), filename: 'Monk.png')
+        Monk.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/JobsArts/mnk.png')), filename: 'mnk.png')
 
 Dragoon = Job.create(name: "Chevalier Dragon", role: "melee",
         level: "30", acronym: "DRG")
-        Dragoon.icon.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Dragoon.png')), filename: 'Dragoon.png')
-        Dragoon.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/drg.png')), filename: 'drg.png')
+        Dragoon.icon.attach(io: File.open(File.join(Rails.root, 'app/assets/images/icons/Dragoon.png')), filename: 'Dragoon.png')
+        Dragoon.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/JobsArts/drg.png')), filename: 'drg.png')
 
 Ninja = Job.create(name: "Ninja", role: "melee",
         level: "30", acronym: "NIN")
-        Ninja.icon.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Ninja.png')), filename: 'Ninja.png')
-        Ninja.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/nin.png')), filename: 'nin.png')
+        Ninja.icon.attach(io: File.open(File.join(Rails.root, 'app/assets/images/icons/Ninja.png')), filename: 'Ninja.png')
+        Ninja.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/JobsArts/nin.png')), filename: 'nin.png')
 
 Samurai = Job.create(name: "Samouraï", role: "melee",
         level: "50", acronym: "SAM")
-        Samurai.icon.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Samurai.png')), filename: 'Samurai.png')
-        Samurai.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/sam.png')), filename: 'sam.png')
+        Samurai.icon.attach(io: File.open(File.join(Rails.root, 'app/assets/images/icons/Samurai.png')), filename: 'Samurai.png')
+        Samurai.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/JobsArts/sam.png')), filename: 'sam.png')
 
 Reaper = Job.create(name: "Faucheur", role: "melee",
         level: "70", acronym: "RPR")
-        Reaper.icon.attach(io: File.open(File.join(Rails.root, 'app/assets/images/DPSRole.png')), filename: 'DPSRole.png')
-        Reaper.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/rpr.png')), filename: 'rpr.png')
+        Reaper.icon.attach(io: File.open(File.join(Rails.root, 'app/assets/images/icons/DPSRole.png')), filename: 'DPSRole.png')
+        Reaper.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/JobsArts/rpr.png')), filename: 'rpr.png')
 
 Bard = Job.create(name: "Barde", role: "distance",
         level: "30", acronym: "BRD")
-        Bard.icon.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Bard.png')), filename: 'Bard.png')
-        Bard.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/brd.png')), filename: 'brd.png')
+        Bard.icon.attach(io: File.open(File.join(Rails.root, 'app/assets/images/icons/Bard.png')), filename: 'Bard.png')
+        Bard.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/JobsArts/brd.png')), filename: 'brd.png')
 
 Machinist = Job.create(name: "Machiniste", role: "distance",
         level: "30", acronym: "MCH")
-        Machinist.icon.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Machinist.png')), filename: 'Machinist.png')
-        Machinist.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/mch.png')), filename: 'mch.png')
+        Machinist.icon.attach(io: File.open(File.join(Rails.root, 'app/assets/images/icons/Machinist.png')), filename: 'Machinist.png')
+        Machinist.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/JobsArts/mch.png')), filename: 'mch.png')
 
 Dancer = Job.create(name: "Danseur", role: "distance",
         level: "60", acronym: "DNC")
-        Dancer.icon.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Dancer.png')), filename: 'Dancer.png')
-        Dancer.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/dnc.png')), filename: 'dnc.png')
+        Dancer.icon.attach(io: File.open(File.join(Rails.root, 'app/assets/images/icons/Dancer.png')), filename: 'Dancer.png')
+        Dancer.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/JobsArts/dnc.png')), filename: 'dnc.png')
 
 BlackMage = Job.create(name: "Mage Noir", role: "caster",
         level: "30", acronym: "BLM")
-        BlackMage.icon.attach(io: File.open(File.join(Rails.root, 'app/assets/images/BlackMage.png')), filename: 'BlackMage.png')
-        BlackMage.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/blm.png')), filename: 'blm.png')
+        BlackMage.icon.attach(io: File.open(File.join(Rails.root, 'app/assets/images/icons/BlackMage.png')), filename: 'BlackMage.png')
+        BlackMage.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/JobsArts/blm.png')), filename: 'blm.png')
 
 RedMage = Job.create(name: "Mage Rouge", role: "caster",
         level: "50", acronym: "RDM")
-        RedMage.icon.attach(io: File.open(File.join(Rails.root, 'app/assets/images/RedMage.png')), filename: 'RedMage.png')
-        RedMage.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/rdm.png')), filename: 'rdm.png')
+        RedMage.icon.attach(io: File.open(File.join(Rails.root, 'app/assets/images/icons/RedMage.png')), filename: 'RedMage.png')
+        RedMage.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/JobsArts/rdm.png')), filename: 'rdm.png')
 
 Summoner = Job.create(name: "Invocateur", role: "caster",
         level: "30", acronym: "SMN")
-        Summoner.icon.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Summoner.png')), filename: 'Summoner.png')
-        Summoner.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/smn.jpeg')), filename: 'smn.jpeg')
+        Summoner.icon.attach(io: File.open(File.join(Rails.root, 'app/assets/images/icons/Summoner.png')), filename: 'Summoner.png')
+        Summoner.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/JobsArts/smn.jpeg')), filename: 'smn.jpeg')
 
 puts "Jobs créés"
 
@@ -151,6 +151,8 @@ Turn13 = Raid.create(name: "L'Abîme de Bahamut IV",
   level: 50, difficulty: "sadique", expansion: "A Realm Reborn")
   Turn13.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Bahamut/T13.png')), filename: 'T13.png')
 
+puts "Raids Bahamut [X]"
+
 A1S = Raid.create(name: "Alexander - Le Poing du Père (sadique)",
   level: 60, difficulty: "sadique", expansion: "Heavensward")
   A1S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Alexander/A1S.png')), filename: 'A1S.png')
@@ -190,44 +192,141 @@ A12S = Raid.create(name: "Alexander - L'Âme du Créateur (sadique)",
   level: 60, difficulty: "sadique", expansion: "Heavensward")
   A12S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Alexander/A12S.png')), filename: 'A12S.png')
 
+  puts "Raids Alexander [X]"
 
-12.times do |i|
-  Raid.create(name: "Omega",
+O1S = Raid.create(name: "Omega",
   level: 70, difficulty: "sadique", expansion: "Stormblood")
-end
+  O1S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Omega/O1S.png')), filename: 'O1S.png')
+O2S = Raid.create(name: "Omega",
+  level: 70, difficulty: "sadique", expansion: "Stormblood")
+  O2S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Omega/O2S.png')), filename: 'O2S.png')
+O3S = Raid.create(name: "Omega",
+  level: 70, difficulty: "sadique", expansion: "Stormblood")
+  O3S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Omega/O3S.png')), filename: 'O3S.png')
+O4S = Raid.create(name: "Omega",
+  level: 70, difficulty: "sadique", expansion: "Stormblood")
+  O4S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Omega/O4S.png')), filename: 'O4S.png')
 
-12.times do |i|
-  Raid.create(name: "Eden",
+O5S = Raid.create(name: "Omega",
+  level: 70, difficulty: "sadique", expansion: "Stormblood")
+  O5S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Omega/O5S.png')), filename: 'O5S.png')
+O6S = Raid.create(name: "Omega",
+  level: 70, difficulty: "sadique", expansion: "Stormblood")
+  O6S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Omega/O6S.png')), filename: 'O6S.png')
+O7S = Raid.create(name: "Omega",
+  level: 70, difficulty: "sadique", expansion: "Stormblood")
+  O7S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Omega/O7S.png')), filename: 'O7S.png')
+O8S = Raid.create(name: "Omega",
+  level: 70, difficulty: "sadique", expansion: "Stormblood")
+  O8S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Omega/O8S.png')), filename: 'O8S.png')
+
+O9S = Raid.create(name: "Omega",
+  level: 70, difficulty: "sadique", expansion: "Stormblood")
+  O9S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Omega/O9S.png')), filename: 'O9S.png')
+O10S = Raid.create(name: "Omega",
+  level: 70, difficulty: "sadique", expansion: "Stormblood")
+  O10S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Omega/O10S.png')), filename: 'O10S.png')
+O11S = Raid.create(name: "Omega",
+  level: 70, difficulty: "sadique", expansion: "Stormblood")
+  O11S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Omega/O11S.png')), filename: 'O11S.png')
+O12S = Raid.create(name: "Omega",
+  level: 70, difficulty: "sadique", expansion: "Stormblood")
+  O12S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Omega/O12S.png')), filename: 'O12S.png')
+
+  puts "Raids Omega [X]"
+
+E1S = Raid.create(name: "Eden",
   level: 80, difficulty: "sadique", expansion: "Shadowbringers")
-end
+  E1S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Eden/E1S.png')), filename: 'E1S.png')
+E2S = Raid.create(name: "Eden",
+  level: 80, difficulty: "sadique", expansion: "Shadowbringers")
+  E2S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Eden/E1S.png')), filename: 'E1S.png')
+E3S = Raid.create(name: "Eden",
+  level: 80, difficulty: "sadique", expansion: "Shadowbringers")
+  E3S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Eden/E1S.png')), filename: 'E1S.png')
+E4S = Raid.create(name: "Eden",
+  level: 80, difficulty: "sadique", expansion: "Shadowbringers")
+  E4S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Eden/E1S.png')), filename: 'E1S.png')
 
-4.times do |i|
-  Raid.create(name: "Pandaemonium",
+E5S = Raid.create(name: "Eden",
+  level: 80, difficulty: "sadique", expansion: "Shadowbringers")
+  E5S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Eden/E1S.png')), filename: 'E1S.png')
+E6S = Raid.create(name: "Eden",
+  level: 80, difficulty: "sadique", expansion: "Shadowbringers")
+  E6S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Eden/E1S.png')), filename: 'E1S.png')
+E7S = Raid.create(name: "Eden",
+  level: 80, difficulty: "sadique", expansion: "Shadowbringers")
+  E7S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Eden/E1S.png')), filename: 'E1S.png')
+E8S = Raid.create(name: "Eden",
+  level: 80, difficulty: "sadique", expansion: "Shadowbringers")
+  E8S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Eden/E1S.png')), filename: 'E1S.png')
+
+E9S = Raid.create(name: "Eden",
+  level: 80, difficulty: "sadique", expansion: "Shadowbringers")
+  E9S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Eden/E1S.png')), filename: 'E1S.png')
+E10S = Raid.create(name: "Eden",
+  level: 80, difficulty: "sadique", expansion: "Shadowbringers")
+  E10S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Eden/E1S.png')), filename: 'E1S.png')
+E11S = Raid.create(name: "Eden",
+  level: 80, difficulty: "sadique", expansion: "Shadowbringers")
+  E11S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Eden/E1S.png')), filename: 'E1S.png')
+E12S = Raid.create(name: "Eden",
+  level: 80, difficulty: "sadique", expansion: "Shadowbringers")
+  E12S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Eden/E1S.png')), filename: 'E1S.png')
+
+  puts "Raids Eden [X]"
+
+P1S = Raid.create(name: "Pandaemonium",
   level: 90, difficulty: "sadique", expansion: "Endwalker")
-end
+  P1S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Pandaemonium/P1S.jpg')), filename: 'P1S.jpg')
+P2S = Raid.create(name: "Pandaemonium",
+  level: 90, difficulty: "sadique", expansion: "Endwalker")
+  P2S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Pandaemonium/P1S.jpg')), filename: 'P1S.jpg')
+P3S = Raid.create(name: "Pandaemonium",
+  level: 90, difficulty: "sadique", expansion: "Endwalker")
+  P3S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Pandaemonium/P1S.jpg')), filename: 'P1S.jpg')
+P4S = Raid.create(name: "Pandaemonium",
+  level: 90, difficulty: "sadique", expansion: "Endwalker")
+  P4S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Pandaemonium/P1S.jpg')), filename: 'P1S.jpg')
 
-Bahamut_fatal = Raid.create(name: "L'abîme infini de Bahamut",
-level: 70, difficulty: "fatal", expansion: "Stormblood")
+  puts "Raids Pandaemonium [X]"
 
-puts "Raids créés"
+UCOB = Raid.create(name: "L'abîme infini de Bahamut",
+  level: 70, difficulty: "fatal", expansion: "Stormblood")
+  UCOB.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Ultimate/UCOB.png')), filename: 'UCOB.png')
+
+UWU = Raid.create(name: "UWU",
+  level: 70, difficulty: "fatal", expansion: "Stormblood")
+  UWU.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Ultimate/UCOB.png')), filename: 'UCOB.png')
+
+TEA = Raid.create(name: "The Epic Of Alexander",
+  level: 70, difficulty: "fatal", expansion: "Shadowbringers")
+  TEA.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Ultimate/UCOB.png')), filename: 'UCOB.png')
+
+  puts "Raids Fatal [X]"
+
+  puts "Raids créés"
 
 puts "Création des guides..."
-Guide.create(content: Faker::Games::WorldOfWarcraft.quote,
-             raid: Bahamut_fatal
-)
 
-Guide.create(content: "Strategy
-This fight has a hard enrage of 8m30s, which means DPS will have to maximize activity. The boss has more health and more damage output than on normal mode, and his main damage abilities do a lot more damage and will require focused healing. The damage mitigation and healing requierment for this fight is very strict.
+Guide.create(
+  strategy:
+  "Oppressor/Faust - This fight has a hard enrage of 8m30s, which means DPS will have to maximize activity. The boss has more health and more damage output than on normal mode, and his main damage abilities do a lot more damage and will require focused healing. The damage mitigation and healing requierment for this fight is very strict.",
 
-Oppressor/Faust
-Resin Bombs: This drops bombs on a number of players, and will leave behind green puddles that deal a lot of damage as well as apply a strong Heavy debuff on players who stand in it. The strategy is to watch for this cast and move to areas where the puddles won't be in the way.
-
-Adds and Missiles: 4 Adds will spawn, and 4 missiles will start dropping from above. The group will have to assign players to take each add, and will have to kill them under a specific missile. The player targeted by the add will gain a stacking debuff which will result in getting the debuff Mini if the stacks reaches 6 before it's killed.
-
-Hypercompressed Plasma: This is an attack that deals very heavy magical damage to the tanks, so they should have cooldowns up before, during, and after. Before and after each Hypercompressed Plasma, high raid damage takes place, healers need to be aware of this as the group and/or tanks will most likely fall to critical levels. Hypercompressed Plasma will not occure more than thrice per fight.
-
-Jump Phase: Both opressors will jump and after a while land on either adjacent or the same side of the platform, during this players will also drop a total of 8 resin bombs. One strategy for this is to stack in the middle, and when resin bombs start to drop make your way to a specified corner of the room. Don't run there immidietly however, as when resin bombs start dropping they drop over time. A good way to deal with this it to run in zigzag patterns, to make sure all 8 resin bombs have dropped before reaching the stacking point.",
-             raid: A1S
+  timeline:
+  "00:15 - ",
+  spells:
+  " Resin Bombs:
+      This drops bombs on a number of players, and will leave behind green puddles that deal a lot of damage as well as apply a strong Heavy debuff on players who stand in it. The strategy is to watch for this cast and move to areas where the puddles won't be in the way.
+    Adds and Missiles:
+      4 Adds will spawn, and 4 missiles will start dropping from above. The group will have to assign players to take each add, and will have to kill them under a specific missile. The player targeted by the add will gain a stacking debuff which will result in getting the debuff Mini if the stacks reaches 6 before it's killed.
+    Hypercompressed Plasma:
+      This is an attack that deals very heavy magical damage to the tanks, so they should have cooldowns up before, during, and after. Before and after each Hypercompressed Plasma, high raid damage takes place, healers need to be aware of this as the group and/or tanks will most likely fall to critical levels. Hypercompressed Plasma will not occure more than thrice per fight.
+    Jump Phase:
+      Both opressors will jump and after a while land on either adjacent or the same side of the platform, during this players will also drop a total of 8 resin bombs. One strategy for this is to stack in the middle, and when resin bombs start to drop make your way to a specified corner of the room. Don't run there immidietly however, as when resin bombs start dropping they drop over time. A good way to deal with this it to run in zigzag patterns, to make sure all 8 resin bombs have dropped before reaching the stacking point.",
+  advice:
+  "Don't be too greedy",
+  raid: A1S
 )
 
 puts "Guides générés"

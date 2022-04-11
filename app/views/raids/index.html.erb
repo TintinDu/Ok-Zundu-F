@@ -12,18 +12,18 @@
         </div>
       <% end %>
       <% @raids.where(expansion: "Stormblood", difficulty: "sadique").each do |raid| %>
-        <div class="card-raid omega">
-          <%= link_to raid.name, raid_path(raid), class: "btn btn-ghost" %>
+        <div>
+          <%= link_to cl_image_tag(raid.image.key), raid_path(raid), class: "card-raid"%>
         </div>
       <% end %>
       <% @raids.where(expansion: "Shadowbringers", difficulty: "sadique").each do |raid| %>
-        <div class="card-raid eden">
-          <%= link_to raid.name, raid_path(raid), class: "btn btn-ghost" %>
+        <div>
+          <%= link_to cl_image_tag(raid.image.key), raid_path(raid), class: "card-raid"%>
         </div>
       <% end %>
       <% @raids.where(expansion: "Endwalker", difficulty: "sadique").each do |raid| %>
-        <div class="card-raid pandaemonium">
-          <%= link_to raid.name, raid_path(raid), class: "btn btn-ghost" %>
+        <div>
+          <%= link_to cl_image_tag(raid.image.key), raid_path(raid), class: "card-raid"%>
         </div>
       <% end %>
       <% @raids.where(expansion: "A Realm Reborn", difficulty: "extreme").each do |raid| %>
@@ -52,18 +52,18 @@
         </div>
       <% end %>
       <% @raids.where(expansion: "Stormblood", difficulty: "fatal").each do |raid| %>
-        <div class="card-raid ucob">
-          <%= link_to raid.name, raid_path(raid), class: "btn btn-ghost" %>
+        <div>
+          <%= link_to cl_image_tag(raid.image.key), raid_path(raid), class: "card-raid"%>
         </div>
       <% end %>
       <% @raids.where(expansion: "Shadowbringers", difficulty: "fatal").each do |raid| %>
-        <div class="card-raid alexander">
-          <%= link_to raid.name, raid_path(raid), class: "btn btn-ghost" %>
+        <div>
+          <%= link_to cl_image_tag(raid.image.key), raid_path(raid), class: "card-raid"%>
         </div>
       <% end %>
       <% @raids.where(expansion: "Endwalker", difficulty: "fatal").each do |raid| %>
-        <div class="card-raid pandaemonium">
-          <%= link_to raid.name, raid_path(raid), class: "btn btn-ghost" %>
+        <div>
+          <%= link_to cl_image_tag(raid.image.key), raid_path(raid), class: "card-raid"%>
         </div>
       <% end %>
     </div>
