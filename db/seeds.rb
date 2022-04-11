@@ -310,11 +310,14 @@ TEA = Raid.create(name: "The Epic Of Alexander",
 puts "Création des guides..."
 
 Guide.create(
+  title:
+  "Oppressor/Faust",
   strategy:
-  "Oppressor/Faust - This fight has a hard enrage of 8m30s, which means DPS will have to maximize activity. The boss has more health and more damage output than on normal mode, and his main damage abilities do a lot more damage and will require focused healing. The damage mitigation and healing requierment for this fight is very strict.",
+  "This fight has a hard enrage of 8m30s, which means DPS will have to maximize activity. The boss has more health and more damage output than on normal mode, and his main damage abilities do a lot more damage and will require focused healing. The damage mitigation and healing requierment for this fight is very strict.",
 
   timeline:
   "00:15 - ",
+
   spells:
   " Resin Bombs:
       This drops bombs on a number of players, and will leave behind green puddles that deal a lot of damage as well as apply a strong Heavy debuff on players who stand in it. The strategy is to watch for this cast and move to areas where the puddles won't be in the way.
@@ -324,8 +327,10 @@ Guide.create(
       This is an attack that deals very heavy magical damage to the tanks, so they should have cooldowns up before, during, and after. Before and after each Hypercompressed Plasma, high raid damage takes place, healers need to be aware of this as the group and/or tanks will most likely fall to critical levels. Hypercompressed Plasma will not occure more than thrice per fight.
     Jump Phase:
       Both opressors will jump and after a while land on either adjacent or the same side of the platform, during this players will also drop a total of 8 resin bombs. One strategy for this is to stack in the middle, and when resin bombs start to drop make your way to a specified corner of the room. Don't run there immidietly however, as when resin bombs start dropping they drop over time. A good way to deal with this it to run in zigzag patterns, to make sure all 8 resin bombs have dropped before reaching the stacking point.",
-  advice:
+
+      advice:
   "Don't be too greedy",
+
   raid: A1S
 )
 

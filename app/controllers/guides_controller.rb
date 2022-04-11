@@ -24,6 +24,6 @@ class GuidesController < ApplicationController
   private
 
   def guide_params
-    params.require(:guide).permit(:content, :raid)
+    params.require(:guide).permit(:title, :strategy, :spells, :raid)
   end
 end

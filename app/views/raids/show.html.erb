@@ -10,6 +10,15 @@
     <% end %>
   </ul>
 
+  <div>
+    <% @raid.guides.each do |guide| %>
+      <p><%= guide.strategy %></p>
+      <p><%= guide.timeline %></p>
+      <p><%= guide.spells %></p>
+      <p><%= guide.advice %></p>
+    <% end %>
+  </div>
+
   <br>
   | <%= link_to 'Retour', raids_path %> |
 
