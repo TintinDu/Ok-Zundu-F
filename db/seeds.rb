@@ -6,7 +6,10 @@ puts "Suppression de tous les jobs"
 Job.destroy_all
 puts "Suppression de tous les guides"
 Guide.destroy_all
+puts "Suppression de tous les utilisateurs"
+User.destroy_all
 
+puts "Création des jobs..."
 Paladin = Job.create(name: "Paladin", role: "tank",
         level: "30", acronym: "PLD")
         Paladin.icon.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Paladin.png')), filename: 'Paladin.png')
@@ -105,41 +108,88 @@ Summoner = Job.create(name: "Invocateur", role: "caster",
 puts "Jobs créés"
 
 
+puts "Création des raids..."
 Turn1 = Raid.create(name: "Le Labyrinthe de Bahamut I",
-level: 50, difficulty: "sadique", expansion: "A Realm Reborn")
+  level: 50, difficulty: "sadique", expansion: "A Realm Reborn")
+  Turn1.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Bahamut/T1.png')), filename: 'T1.png')
 Turn2 = Raid.create(name: "Le Labyrinthe de Bahamut II",
-level: 50, difficulty: "sadique", expansion: "A Realm Reborn")
+  level: 50, difficulty: "sadique", expansion: "A Realm Reborn")
+  Turn2.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Bahamut/T2.png')), filename: 'T2.png')
 Turn3 = Raid.create(name: "Le Labyrinthe de Bahamut III",
-level: 50, difficulty: "sadique", expansion: "A Realm Reborn")
+  level: 50, difficulty: "sadique", expansion: "A Realm Reborn")
+  Turn3.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Bahamut/T3.png')), filename: 'T3.png')
 Turn4 = Raid.create(name: "Le Labyrinthe de Bahamut IV",
-level: 50, difficulty: "sadique", expansion: "A Realm Reborn")
+  level: 50, difficulty: "sadique", expansion: "A Realm Reborn")
+  Turn4.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Bahamut/T4.png')), filename: 'T4.png')
 Turn5 = Raid.create(name: "Le Labyrinthe de Bahamut V",
-level: 50, difficulty: "sadique", expansion: "A Realm Reborn")
+  level: 50, difficulty: "sadique", expansion: "A Realm Reborn")
+  Turn5.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Bahamut/T5.png')), filename: 'T5.png')
 
 Turn6 = Raid.create(name: "Les Méandres de Bahamut I",
-level: 50, difficulty: "sadique", expansion: "A Realm Reborn")
+  level: 50, difficulty: "sadique", expansion: "A Realm Reborn")
+  Turn6.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Bahamut/T6.png')), filename: 'T6.png')
 Turn7 = Raid.create(name: "Les Méandres de Bahamut II",
-level: 50, difficulty: "sadique", expansion: "A Realm Reborn")
+  level: 50, difficulty: "sadique", expansion: "A Realm Reborn")
+  Turn7.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Bahamut/T7.png')), filename: 'T7.png')
 Turn8 = Raid.create(name: "Les Méandres de Bahamut III",
-level: 50, difficulty: "sadique", expansion: "A Realm Reborn")
+  level: 50, difficulty: "sadique", expansion: "A Realm Reborn")
+  Turn8.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Bahamut/T8.png')), filename: 'T8.png')
 Turn9 = Raid.create(name: "Les Méandres de Bahamut IV",
-level: 50, difficulty: "sadique", expansion: "A Realm Reborn")
+  level: 50, difficulty: "sadique", expansion: "A Realm Reborn")
+  Turn9.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Bahamut/T9.png')), filename: 'T9.png')
 
 Turn10 = Raid.create(name: "L'Abîme de Bahamut I",
-level: 50, difficulty: "sadique", expansion: "A Realm Reborn")
+  level: 50, difficulty: "sadique", expansion: "A Realm Reborn")
+  Turn10.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Bahamut/T10.png')), filename: 'T10.png')
 Turn11 = Raid.create(name: "L'Abîme de Bahamut II",
-level: 50, difficulty: "sadique", expansion: "A Realm Reborn")
+  level: 50, difficulty: "sadique", expansion: "A Realm Reborn")
+  Turn11.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Bahamut/T11.png')), filename: 'T11.png')
 Turn12 = Raid.create(name: "L'Abîme de Bahamut III",
-level: 50, difficulty: "sadique", expansion: "A Realm Reborn")
+  level: 50, difficulty: "sadique", expansion: "A Realm Reborn")
+  Turn12.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Bahamut/T12.png')), filename: 'T12.png')
 Turn13 = Raid.create(name: "L'Abîme de Bahamut IV",
-level: 50, difficulty: "sadique", expansion: "A Realm Reborn")
+  level: 50, difficulty: "sadique", expansion: "A Realm Reborn")
+  Turn13.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Bahamut/T13.png')), filename: 'T13.png')
 
-
-
-12.times do |i|
-  Raid.create(name: "Alexander",
+A1S = Raid.create(name: "Alexander - Le Poing du Père (sadique)",
   level: 60, difficulty: "sadique", expansion: "Heavensward")
-end
+  A1S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Alexander/A1S.png')), filename: 'A1S.png')
+A2S = Raid.create(name: "Alexander - Le Poignet du Père (sadique)",
+  level: 60, difficulty: "sadique", expansion: "Heavensward")
+  A2S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Alexander/A2S.png')), filename: 'A2S.png')
+A3S = Raid.create(name: "Alexander - Le Bras du Père (sadique)",
+  level: 60, difficulty: "sadique", expansion: "Heavensward")
+  A3S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Alexander/A3S.png')), filename: 'A3S.png')
+A4S = Raid.create(name: "Alexander - Le Fardeau du Père (sadique)",
+  level: 60, difficulty: "sadique", expansion: "Heavensward")
+  A4S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Alexander/A4S.png')), filename: 'A4S.png')
+
+A5S = Raid.create(name: "Alexander - Le Poing du Fils (sadique)",
+  level: 60, difficulty: "sadique", expansion: "Heavensward")
+  A5S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Alexander/A5S.png')), filename: 'A5S.png')
+A6S = Raid.create(name: "Alexander - Le Poignet du Fils (sadique)",
+  level: 60, difficulty: "sadique", expansion: "Heavensward")
+  A6S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Alexander/A6S.png')), filename: 'A6S.png')
+A7S = Raid.create(name: "Alexander - Le Bras du Fils (sadique)",
+  level: 60, difficulty: "sadique", expansion: "Heavensward")
+  A7S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Alexander/A7S.png')), filename: 'A7S.png')
+A8S = Raid.create(name: "Alexander - Le Fardeau du Fils (sadique)",
+  level: 60, difficulty: "sadique", expansion: "Heavensward")
+  A8S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Alexander/A8S.png')), filename: 'A8S.png')
+
+A9S = Raid.create(name: "Alexander - Les Yeux du Créateur (sadique)",
+  level: 60, difficulty: "sadique", expansion: "Heavensward")
+  A9S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Alexander/A9S.png')), filename: 'A9S.png')
+A10S = Raid.create(name: "Alexander - Le Souffle du Créateur (sadique)",
+  level: 60, difficulty: "sadique", expansion: "Heavensward")
+  A10S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Alexander/A10S.png')), filename: 'A10S.png')
+A11S = Raid.create(name: "Alexander - Le Cœur du Créateur (sadique)",
+  level: 60, difficulty: "sadique", expansion: "Heavensward")
+  A11S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Alexander/A11S.png')), filename: 'A11S.png')
+A12S = Raid.create(name: "Alexander - L'Âme du Créateur (sadique)",
+  level: 60, difficulty: "sadique", expansion: "Heavensward")
+  A12S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Alexander/A12S.png')), filename: 'A12S.png')
+
 
 12.times do |i|
   Raid.create(name: "Omega",
@@ -159,16 +209,28 @@ end
 Bahamut_fatal = Raid.create(name: "L'abîme infini de Bahamut",
 level: 70, difficulty: "fatal", expansion: "Stormblood")
 
+puts "Raids créés"
 
+puts "Création des guides..."
 Guide.create(content: Faker::Games::WorldOfWarcraft.quote,
              raid: Bahamut_fatal
 )
 
+Guide.create(content: "Strategy
+This fight has a hard enrage of 8m30s, which means DPS will have to maximize activity. The boss has more health and more damage output than on normal mode, and his main damage abilities do a lot more damage and will require focused healing. The damage mitigation and healing requierment for this fight is very strict.
+
+Oppressor/Faust
+Resin Bombs: This drops bombs on a number of players, and will leave behind green puddles that deal a lot of damage as well as apply a strong Heavy debuff on players who stand in it. The strategy is to watch for this cast and move to areas where the puddles won't be in the way.
+
+Adds and Missiles: 4 Adds will spawn, and 4 missiles will start dropping from above. The group will have to assign players to take each add, and will have to kill them under a specific missile. The player targeted by the add will gain a stacking debuff which will result in getting the debuff Mini if the stacks reaches 6 before it's killed.
+
+Hypercompressed Plasma: This is an attack that deals very heavy magical damage to the tanks, so they should have cooldowns up before, during, and after. Before and after each Hypercompressed Plasma, high raid damage takes place, healers need to be aware of this as the group and/or tanks will most likely fall to critical levels. Hypercompressed Plasma will not occure more than thrice per fight.
+
+Jump Phase: Both opressors will jump and after a while land on either adjacent or the same side of the platform, during this players will also drop a total of 8 resin bombs. One strategy for this is to stack in the middle, and when resin bombs start to drop make your way to a specified corner of the room. Don't run there immidietly however, as when resin bombs start dropping they drop over time. A good way to deal with this it to run in zigzag patterns, to make sure all 8 resin bombs have dropped before reaching the stacking point.",
+             raid: A1S
+)
+
 puts "Guides générés"
-
-puts "Suppression de tous les utilisateurs"
-
-User.destroy_all
 
 puts "Création des utilisateurs..."
 

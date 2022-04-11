@@ -2,13 +2,13 @@
   <div data-insert-in-list-target="items">
     <div class="cards-index">
       <% @raids.where(expansion: "A Realm Reborn", difficulty: "sadique").each do |raid| %>
-        <div class="card-raid bahamut">
-          <%= link_to raid.name, raid_path(raid), class: "btn btn-ghost" %>
+        <div>
+          <%= link_to cl_image_tag(raid.image.key), raid_path(raid), class: "card-raid"%>
         </div>
       <% end %>
       <% @raids.where(expansion: "Heavensward", difficulty: "sadique").each do |raid| %>
-        <div class="card-raid alexander">
-          <%= link_to raid.name, raid_path(raid), class: "btn btn-ghost" %>
+        <div>
+          <%= link_to cl_image_tag(raid.image.key), raid_path(raid), class: "card-raid"%>
         </div>
       <% end %>
       <% @raids.where(expansion: "Stormblood", difficulty: "sadique").each do |raid| %>
