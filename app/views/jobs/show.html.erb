@@ -4,3 +4,12 @@
   <%= @job.role %>
   <%= @job.acronym %>
 </div>
+
+<div>
+    <% @job.job_guides.each do |job_guide| %>
+      <p><%= job_guide.title %></p>
+      <p><%= job_guide.content %></p>
+      <p><%= job_guide.rotation %></p>
+      <%= cl_image_tag(job_guide.opener.key) %>
+    <% end %>
+  </div>

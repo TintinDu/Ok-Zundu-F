@@ -3,15 +3,9 @@
   <p><%= "Lvl #{@raid.level} / #{@raid.expansion} / #{@raid.difficulty}" %></p>
 
 
-  <ul class="list-group">
-    <% @raid.guides.each do |guide| %>
-      <li class="list-group-item"><%= guide.content %>
-      </li>
-    <% end %>
-  </ul>
-
   <div>
     <% @raid.guides.each do |guide| %>
+      <p><%= guide.title %></p>
       <p><%= guide.strategy %></p>
       <p><%= guide.timeline %></p>
       <p><%= guide.spells %></p>

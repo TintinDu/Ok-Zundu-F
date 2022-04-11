@@ -1,0 +1,2 @@
+module JobGuidesHelper
+end

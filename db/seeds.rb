@@ -4,10 +4,13 @@ puts "Suppression de tous les raids"
 Raid.destroy_all
 puts "Suppression de tous les jobs"
 Job.destroy_all
-puts "Suppression de tous les guides"
+puts "Suppression de tous les guides de raids"
 Guide.destroy_all
+puts "Suppression de tous les guides de jobs"
+JobGuide.destroy_all
 puts "Suppression de tous les utilisateurs"
 User.destroy_all
+
 
 puts "Création des jobs..."
 Paladin = Job.create(name: "Paladin", role: "tank",
@@ -297,17 +300,17 @@ UCOB = Raid.create(name: "L'abîme infini de Bahamut",
 
 UWU = Raid.create(name: "UWU",
   level: 70, difficulty: "fatal", expansion: "Stormblood")
-  UWU.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Ultimate/UCOB.png')), filename: 'UCOB.png')
+  UWU.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Ultimate/UWU.png')), filename: 'UWU.png')
 
 TEA = Raid.create(name: "The Epic Of Alexander",
-  level: 70, difficulty: "fatal", expansion: "Shadowbringers")
-  TEA.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Ultimate/UCOB.png')), filename: 'UCOB.png')
+  level: 80, difficulty: "fatal", expansion: "Shadowbringers")
+  TEA.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Ultimate/TEA.png')), filename: 'TEA.png')
 
   puts "Raids Fatal [X]"
 
   puts "Raids créés"
 
-puts "Création des guides..."
+puts "Création des guides de raids..."
 
 Guide.create(
   title:
@@ -334,7 +337,19 @@ Guide.create(
   raid: A1S
 )
 
-puts "Guides générés"
+puts "Guides de raids générés"
+
+puts "Création des guides de jobs..."
+
+Guide_pld = JobGuide.create(
+  title: "Paladin",
+  content: "Hello.",
+  rotation: "Opener is straight forward.",
+  job: Paladin
+)
+Guide_pld.opener.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Openers/PldOpener.png')), filename: 'PldOpener.png')
+
+puts "Guides de jobs générés"
 
 puts "Création des utilisateurs..."
 

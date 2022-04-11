@@ -19,6 +19,8 @@ class RaidsController < ApplicationController
       @raids = Raid.where(sql_query, query: "%#{params[:query]}%")
     elsif params[:difficulty]
       @raids = Raid.where(:difficulty => params[:difficulty])
+    elsif params[:expansion]
+      @raids = Raid.where(:expansion => params[:expansion])
     end
     set_raid
     @guide = Guide.new
@@ -31,6 +33,8 @@ class RaidsController < ApplicationController
       @raids = Raid.where(sql_query, query: "%#{params[:query]}%")
     elsif params[:difficulty]
       @raids = Raid.where(:difficulty => params[:difficulty])
+    elsif params[:expansion]
+      @raids = Raid.where(:expansion => params[:expansion])
     else
       @raids = Raid.all
     end

@@ -19,7 +19,8 @@
   <%= render "shared/banner" if current_page?(root_path) %>
     <div class="container-fluid">
       <div style="<% unless current_page?(root_path) || current_page?(new_user_session_path) %>margin-top: 6em<% end %>">
-        <%= render "jobs/tabs" if current_page?(jobs_path) || current_page?(tanks_jobs_path) || current_page?(healers_jobs_path) || current_page?(melees_jobs_path) || current_page?(ranges_jobs_path) || current_page?(casters_jobs_path) %>
+        <%= render "jobs/job_tabs" if current_page?(jobs_path) || current_page?(tanks_jobs_path) || current_page?(healers_jobs_path) || current_page?(melees_jobs_path) || current_page?(ranges_jobs_path) || current_page?(casters_jobs_path) %>
+        <%= render "raids/raid_tabs" if current_page?(raids_path) %>
         <%= yield %>
       </div>
     </div>
