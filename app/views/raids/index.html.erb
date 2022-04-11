@@ -3,26 +3,31 @@
     <div class="cards-index">
       <% @raids.where(expansion: "A Realm Reborn", difficulty: "sadique").each do |raid| %>
         <div>
+          <%= raid.name %>
           <%= link_to cl_image_tag(raid.image.key), raid_path(raid), class: "card-raid"%>
         </div>
       <% end %>
       <% @raids.where(expansion: "Heavensward", difficulty: "sadique").each do |raid| %>
         <div>
+          <%= raid.name %>
           <%= link_to cl_image_tag(raid.image.key), raid_path(raid), class: "card-raid"%>
         </div>
       <% end %>
       <% @raids.where(expansion: "Stormblood", difficulty: "sadique").each do |raid| %>
         <div>
+          <%= raid.name %>
           <%= link_to cl_image_tag(raid.image.key), raid_path(raid), class: "card-raid"%>
         </div>
       <% end %>
       <% @raids.where(expansion: "Shadowbringers", difficulty: "sadique").each do |raid| %>
         <div>
+          <%= raid.name %>
           <%= link_to cl_image_tag(raid.image.key), raid_path(raid), class: "card-raid"%>
         </div>
       <% end %>
       <% @raids.where(expansion: "Endwalker", difficulty: "sadique").each do |raid| %>
         <div>
+          <%= raid.name %>
           <%= link_to cl_image_tag(raid.image.key), raid_path(raid), class: "card-raid"%>
         </div>
       <% end %>
@@ -53,16 +58,19 @@
       <% end %>
       <% @raids.where(expansion: "Stormblood", difficulty: "fatal").each do |raid| %>
         <div>
+          <%= raid.name %>
           <%= link_to cl_image_tag(raid.image.key), raid_path(raid), class: "card-raid"%>
         </div>
       <% end %>
       <% @raids.where(expansion: "Shadowbringers", difficulty: "fatal").each do |raid| %>
         <div>
+          <%= raid.name %>
           <%= link_to cl_image_tag(raid.image.key), raid_path(raid), class: "card-raid"%>
         </div>
       <% end %>
       <% @raids.where(expansion: "Endwalker", difficulty: "fatal").each do |raid| %>
         <div>
+          <%= raid.name %>
           <%= link_to cl_image_tag(raid.image.key), raid_path(raid), class: "card-raid"%>
         </div>
       <% end %>

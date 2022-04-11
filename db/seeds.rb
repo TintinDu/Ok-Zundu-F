@@ -197,85 +197,85 @@ A12S = Raid.create(name: "Alexander - L'Âme du Créateur (sadique)",
 
   puts "Raids Alexander [X]"
 
-O1S = Raid.create(name: "Omega",
+O1S = Raid.create(name: "Deltastice v1.0 (sadique)",
   level: 70, difficulty: "sadique", expansion: "Stormblood")
   O1S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Omega/O1S.png')), filename: 'O1S.png')
-O2S = Raid.create(name: "Omega",
+O2S = Raid.create(name: "Deltastice v2.0 (sadique)",
   level: 70, difficulty: "sadique", expansion: "Stormblood")
   O2S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Omega/O2S.png')), filename: 'O2S.png')
-O3S = Raid.create(name: "Omega",
+O3S = Raid.create(name: "Deltastice v3.0 (sadique)",
   level: 70, difficulty: "sadique", expansion: "Stormblood")
   O3S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Omega/O3S.png')), filename: 'O3S.png')
-O4S = Raid.create(name: "Omega",
+O4S = Raid.create(name: "Deltastice v4.0 (sadique)",
   level: 70, difficulty: "sadique", expansion: "Stormblood")
   O4S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Omega/O4S.png')), filename: 'O4S.png')
 
-O5S = Raid.create(name: "Omega",
+O5S = Raid.create(name: "Sigmastice v1.0 (sadique)",
   level: 70, difficulty: "sadique", expansion: "Stormblood")
   O5S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Omega/O5S.png')), filename: 'O5S.png')
-O6S = Raid.create(name: "Omega",
+O6S = Raid.create(name: "Sigmastice v2.0 (sadique)",
   level: 70, difficulty: "sadique", expansion: "Stormblood")
   O6S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Omega/O6S.png')), filename: 'O6S.png')
-O7S = Raid.create(name: "Omega",
+O7S = Raid.create(name: "Sigmastice v3.0 (sadique)",
   level: 70, difficulty: "sadique", expansion: "Stormblood")
   O7S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Omega/O7S.png')), filename: 'O7S.png')
-O8S = Raid.create(name: "Omega",
+O8S = Raid.create(name: "Sigmastice v4.0 (sadique)",
   level: 70, difficulty: "sadique", expansion: "Stormblood")
   O8S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Omega/O8S.png')), filename: 'O8S.png')
 
-O9S = Raid.create(name: "Omega",
+O9S = Raid.create(name: "Alphastice v1.0 (sadique)",
   level: 70, difficulty: "sadique", expansion: "Stormblood")
   O9S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Omega/O9S.png')), filename: 'O9S.png')
-O10S = Raid.create(name: "Omega",
+O10S = Raid.create(name: "Alphastice v2.0 (sadique)",
   level: 70, difficulty: "sadique", expansion: "Stormblood")
   O10S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Omega/O10S.png')), filename: 'O10S.png')
-O11S = Raid.create(name: "Omega",
+O11S = Raid.create(name: "Alphastice v3.0 (sadique)",
   level: 70, difficulty: "sadique", expansion: "Stormblood")
   O11S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Omega/O11S.png')), filename: 'O11S.png')
-O12S = Raid.create(name: "Omega",
+O12S = Raid.create(name: "Alphastice v4.0 (sadique)",
   level: 70, difficulty: "sadique", expansion: "Stormblood")
   O12S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Omega/O12S.png')), filename: 'O12S.png')
 
   puts "Raids Omega [X]"
 
-E1S = Raid.create(name: "Eden",
+E1S = Raid.create(name: "L'Éveil d'Éden - Résurrection (sadique)",
   level: 80, difficulty: "sadique", expansion: "Shadowbringers")
   E1S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Eden/E1S.png')), filename: 'E1S.png')
-E2S = Raid.create(name: "Eden",
+E2S = Raid.create(name: "L'Éveil d'Éden - Descente (sadique)",
   level: 80, difficulty: "sadique", expansion: "Shadowbringers")
-  E2S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Eden/E1S.png')), filename: 'E1S.png')
-E3S = Raid.create(name: "Eden",
+  E2S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Eden/E2S.png')), filename: 'E2S.png')
+E3S = Raid.create(name: "L'Éveil d'Éden - Déluge (sadique)",
   level: 80, difficulty: "sadique", expansion: "Shadowbringers")
-  E3S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Eden/E1S.png')), filename: 'E1S.png')
-E4S = Raid.create(name: "Eden",
+  E3S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Eden/E3S.png')), filename: 'E3S.png')
+E4S = Raid.create(name: "L'Éveil d'Éden - Inhumation (sadique)",
   level: 80, difficulty: "sadique", expansion: "Shadowbringers")
-  E4S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Eden/E1S.png')), filename: 'E1S.png')
+  E4S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Eden/E4S.png')), filename: 'E4S.png')
 
-E5S = Raid.create(name: "Eden",
+E5S = Raid.create(name: "Les Accords d'Éden - Fulmination (sadique)	",
   level: 80, difficulty: "sadique", expansion: "Shadowbringers")
-  E5S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Eden/E1S.png')), filename: 'E1S.png')
-E6S = Raid.create(name: "Eden",
+  E5S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Eden/E5S.png')), filename: 'E5S.png')
+E6S = Raid.create(name: "Les Accords d'Éden - Fureur (sadique)	",
   level: 80, difficulty: "sadique", expansion: "Shadowbringers")
-  E6S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Eden/E1S.png')), filename: 'E1S.png')
-E7S = Raid.create(name: "Eden",
+  E6S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Eden/E6S.png')), filename: 'E6S.png')
+E7S = Raid.create(name: "Les Accords d'Éden - Iconoclasme (sadique)	",
   level: 80, difficulty: "sadique", expansion: "Shadowbringers")
-  E7S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Eden/E1S.png')), filename: 'E1S.png')
-E8S = Raid.create(name: "Eden",
+  E7S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Eden/E7S.png')), filename: 'E7S.png')
+E8S = Raid.create(name: "Les Accords d'Éden - Éclat (sadique)	",
   level: 80, difficulty: "sadique", expansion: "Shadowbringers")
-  E8S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Eden/E1S.png')), filename: 'E1S.png')
+  E8S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Eden/E8S.png')), filename: 'E8S.png')
 
-E9S = Raid.create(name: "Eden",
+E9S = Raid.create(name: "La Promesse d'Éden - Nuée (sadique)",
   level: 80, difficulty: "sadique", expansion: "Shadowbringers")
-  E9S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Eden/E1S.png')), filename: 'E1S.png')
-E10S = Raid.create(name: "Eden",
+  E9S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Eden/E9S.png')), filename: 'E9S.png')
+E10S = Raid.create(name: "La Promesse d'Éden - Litanie (sadique)",
   level: 80, difficulty: "sadique", expansion: "Shadowbringers")
-  E10S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Eden/E1S.png')), filename: 'E1S.png')
-E11S = Raid.create(name: "Eden",
+  E10S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Eden/E10S.png')), filename: 'E10S.png')
+E11S = Raid.create(name: "La Promesse d'Éden - Anamorphose (sadique)",
   level: 80, difficulty: "sadique", expansion: "Shadowbringers")
-  E11S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Eden/E1S.png')), filename: 'E1S.png')
-E12S = Raid.create(name: "Eden",
+  E11S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Eden/E11S.png')), filename: 'E11S.png')
+E12S = Raid.create(name: "La Promesse d'Éden - Éternité (sadique)",
   level: 80, difficulty: "sadique", expansion: "Shadowbringers")
-  E12S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Eden/E1S.png')), filename: 'E1S.png')
+  E12S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Eden/E12S.png')), filename: 'E12S.png')
 
   puts "Raids Eden [X]"
 
