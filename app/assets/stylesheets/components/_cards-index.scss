@@ -3,6 +3,8 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
   margin-bottom: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 // Smallest device
@@ -15,21 +17,21 @@
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
   .cards-index {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .cards-index {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .cards-index {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
