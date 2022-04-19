@@ -55,3 +55,9 @@
   color: $black;
   background-color: $light-green;
 }
+
+@media (min-width: 100px) and (max-width: 575px) {
+  .btn-turquoise {
+    width: 3em;
+  }
+}

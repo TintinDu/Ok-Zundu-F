@@ -39,6 +39,55 @@
 }
 
 
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .card-raid {img{
+    height: 200px;
+    width: 400px;
+  }}
+}
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .card-raid {
+    height: 200px;
+    width: 400px;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .card-raid {img {
+    height: 200px;
+    width: 485px;
+  }}
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .card-raid {img {
+    height: 200px;
+    width: 485px;
+  }}
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .card-raid {img {
+    height: 200px;
+    width: 485px;
+  }}
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .card-raid {img {
+    height: 200px;
+    width: 485px;
+  }}
+}
+
+
 .overlay {
 
   position: relative;
