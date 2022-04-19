@@ -3,6 +3,7 @@
   <%= @job.name %>
   <%= @job.role %>
   <%= @job.acronym %>
+
 </div>
 
 <div>
@@ -12,4 +13,8 @@
       <p><%= job_guide.rotation %></p>
       <%= cl_image_tag(job_guide.opener.key) %>
     <% end %>
-  </div>
+
+    <br>
+  | <%= link_to 'Retour', jobs_path %> |
+
+</div>

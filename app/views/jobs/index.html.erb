@@ -1,4 +1,4 @@
-<div class="cards">
+<div class="cards-job">
   <% @jobs.each do |job| %>
     <%= link_to cl_image_tag(job.image.key), job_path(job), class: "card-job"%>
   <% end %>
