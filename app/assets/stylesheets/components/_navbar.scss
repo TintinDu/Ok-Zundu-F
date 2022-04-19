@@ -1,23 +1,23 @@
-.navbar-lewagon {
+.navbar-zundu {
   background-color: white;
   transition: 0s background-color ease;
 }
 
-.navbar-lewagon .navbar-collapse {
+.navbar-zundu .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand {
+.navbar-zundu .navbar-brand {
   justify-content: flex-start;
 }
 
-.navbar-lewagon .navbar-brand img {
+.navbar-zundu .navbar-brand img {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
 }
 
-.navbar-lewagon .navbar-brand img:hover {
+.navbar-zundu .navbar-brand img:hover {
   opacity: 0.9;
 }
 
@@ -30,6 +30,6 @@
   justify-content: flex-end;
 }
 
-.navbar-lewagon-white {
+.navbar-zundu-white {
   background-color: white;
 }
