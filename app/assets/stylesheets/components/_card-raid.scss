@@ -2,7 +2,7 @@
   background-size: cover;
   background-position: center;
   height: 200px;
-  width: 485px;
+  // width: 485px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +19,7 @@
     background-size: cover;
     background-position: center;
     height: 200px;
-    width: 485px;
+    // width: 485px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,16 +42,16 @@
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .card-raid {img{
-    height: 200px;
-    width: 400px;
+    height: 180px;
+    width: 380px;
   }}
 }
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .card-raid {
-    height: 200px;
-    width: 400px;
+    height: 180px;
+    width: 380px;
   }
 }
 
@@ -67,7 +67,7 @@
 @media (min-width: 768px) {
   .card-raid {img {
     height: 200px;
-    width: 485px;
+    width: 380px;
   }}
 }
 
@@ -83,7 +83,7 @@
 @media (min-width: 1200px) {
   .card-raid {img {
     height: 200px;
-    width: 485px;
+    width: 480px;
   }}
 }
 
