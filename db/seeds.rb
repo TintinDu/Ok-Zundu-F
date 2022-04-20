@@ -112,6 +112,22 @@ puts "Jobs créés"
 
 
 puts "Création des raids..."
+
+puts "Extreme ARR [X]"
+
+
+puts "Extreme HW [X]"
+
+
+puts "Extreme SB [X]"
+
+
+puts "Extreme SHB [X]"
+
+
+puts "Extreme EW [X]"
+
+
 Turn1 = Raid.create(name: "Le Labyrinthe de Bahamut I",
   level: 50, difficulty: "sadique", expansion: "A Realm Reborn")
   Turn1.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Bahamut/T1.png')), filename: 'T1.png')
@@ -279,16 +295,16 @@ E12S = Raid.create(name: "La Promesse d'Éden - Éternité (sadique)",
 
   puts "Raids Eden [X]"
 
-P1S = Raid.create(name: "Pandaemonium",
+P1S = Raid.create(name: "Parvis (sadique)",
   level: 90, difficulty: "sadique", expansion: "Endwalker")
   P1S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Pandaemonium/P1S.jpg')), filename: 'P1S.jpg')
-P2S = Raid.create(name: "Pandaemonium",
+P2S = Raid.create(name: "Cloaque (sadique)",
   level: 90, difficulty: "sadique", expansion: "Endwalker")
   P2S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Pandaemonium/P1S.jpg')), filename: 'P1S.jpg')
-P3S = Raid.create(name: "Pandaemonium",
+P3S = Raid.create(name: "Fournaise (sadique)",
   level: 90, difficulty: "sadique", expansion: "Endwalker")
   P3S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Pandaemonium/P1S.jpg')), filename: 'P1S.jpg')
-P4S = Raid.create(name: "Pandaemonium",
+P4S = Raid.create(name: "Abîme (sadique)",
   level: 90, difficulty: "sadique", expansion: "Endwalker")
   P4S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Pandaemonium/P1S.jpg')), filename: 'P1S.jpg')
 
@@ -298,7 +314,7 @@ UCOB = Raid.create(name: "L'abîme infini de Bahamut",
   level: 70, difficulty: "fatal", expansion: "Stormblood")
   UCOB.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Ultimate/UCOB.png')), filename: 'UCOB.png')
 
-UWU = Raid.create(name: "UWU",
+UWU = Raid.create(name: "Ultima",
   level: 70, difficulty: "fatal", expansion: "Stormblood")
   UWU.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Ultimate/UWU.png')), filename: 'UWU.png')
 
@@ -319,7 +335,7 @@ Guide.create(
   "This fight has a hard enrage of 8m30s, which means DPS will have to maximize activity. The boss has more health and more damage output than on normal mode, and his main damage abilities do a lot more damage and will require focused healing. The damage mitigation and healing requierment for this fight is very strict.",
 
   timeline:
-  "00:15 - ",
+  "8min30",
 
   spells:
   " Resin Bombs:
@@ -344,7 +360,7 @@ puts "Création des guides de jobs..."
 Guide_pld = JobGuide.create(
   title: "Paladin",
   content: "Hello.",
-  rotation: "Opener is straight forward.",
+  rotation: "Rotation is ez.",
   job: Paladin
 )
 Guide_pld.opener.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Openers/PldOpener.png')), filename: 'PldOpener.png')
@@ -353,11 +369,11 @@ puts "Guides de jobs générés"
 
 puts "Création des utilisateurs..."
 
+avatar0 = URI.open('https://pbs.twimg.com/profile_images/716730641761570816/Gx4pTC8o_400x400.jpg')
+user0= User.create(email: 'gogole@zundu.com', free_company: "Ok'Zundu", password: "123456")
+user0.avatar.attach(io: avatar0, filename: 'Gx4pTC8o_400x400.jpg', content_type: 'image/jpg')
+
 avatar1 = URI.open('https://res.cloudinary.com/dbfbd9xou/image/upload/v1647968420/nm6f6rshjnielwnirl6j.jpg')
 user1= User.create(email: 'reaven@zundu.com', free_company: "Ok'Zundu", password: "123456")
 user1.avatar.attach(io: avatar1, filename: 'nm6f6rshjnielwnirl6j.jpg', content_type: 'image/jpg')
-
-avatar2 = URI.open('https://pbs.twimg.com/profile_images/716730641761570816/Gx4pTC8o_400x400.jpg')
-user2= User.create(email: 'gogole@zundu.com', free_company: "Ok'Zundu", password: "123456")
-user2.avatar.attach(io: avatar2, filename: 'Gx4pTC8o_400x400.jpg', content_type: 'image/jpg')
 puts "Utilisateurs créés"
