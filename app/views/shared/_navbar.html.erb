@@ -57,9 +57,19 @@
           </div>
         </li>
       <% else %>
-        <li class="nav-item">
-          <%= link_to "Login", new_user_session_path, class: "nav-link nav-zundu-link" %>
-        </li>
+        <% if current_page?(new_user_registration_path) %>
+          <li class="nav-item">
+            <%= link_to "Connexion", new_user_session_path, class: "nav-link nav-zundu-link" %>
+          </li>
+        <% elsif current_page?(new_user_session_path) %>
+          <li class="nav-item">
+            <%= link_to "Inscription", new_user_registration_path, class: "nav-link nav-zundu-link" %>
+          </li>
+        <% else %>
+          <li class="nav-item">
+            <%= link_to "Connexion", new_user_session_path, class: "nav-link nav-zundu-link" %>
+          </li>
+        <% end %>
       <% end %>
     </ul>
   </div>
