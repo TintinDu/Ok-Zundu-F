@@ -211,13 +211,13 @@ Diamond = Raid.create(name: "Le Tillac des Cirrus (extrême)",
 
   Zodiark = Raid.create(name: "Le Cratère des Martyrs (extrême)",
     level: 90, difficulty: "extreme", expansion: "Endwalker")
-    Zodiark.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/SbExtreme/Zodiark.png')), filename: 'Zodiark.png')
+    Zodiark.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/EwExtreme/Zodiark.png')), filename: 'Zodiark.png')
   Hydaelyn = Raid.create(name: "Le Cristal-mère (extrême)",
     level: 90, difficulty: "extreme", expansion: "Endwalker")
-    Hydaelyn.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/SbExtreme/Hydaelyn.png')), filename: 'Hydaelyn.png')
+    Hydaelyn.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/EwExtreme/Hydaelyn.png')), filename: 'Hydaelyn.png')
   Meteion = Raid.create(name: "Le Répons final (extrême)",
     level: 90, difficulty: "extreme", expansion: "Endwalker")
-    Meteion.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/SbExtreme/Meteion.png')), filename: 'Meteion.png')
+    Meteion.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/EwExtreme/Meteion.png')), filename: 'Meteion.png')
 
 puts "Extreme EW [X]"
 
