@@ -113,17 +113,111 @@ puts "Jobs créés"
 
 puts "Création des raids..."
 
+Garuda = Raid.create(name: "Hurloeil (extrême)",
+  level: 50, difficulty: "extreme", expansion: "A Realm Reborn")
+  Garuda.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/ArrExtreme/Garuda.png')), filename: 'Garuda.png')
+Titan = Raid.create(name: "Le Nombril (extrême)",
+  level: 50, difficulty: "extreme", expansion: "A Realm Reborn")
+  Titan.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/ArrExtreme/Titan.png')), filename: 'Titan.png')
+Ifrit = Raid.create(name: "Le Cratère des tisons (extrême)",
+  level: 50, difficulty: "extreme", expansion: "A Realm Reborn")
+  Ifrit.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/ArrExtreme/Ifrit.png')), filename: 'Ifrit.png')
+Mog = Raid.create(name: "La Lisière de ronces (extrême)",
+  level: 50, difficulty: "extreme", expansion: "A Realm Reborn")
+  Mog.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/ArrExtreme/Mog.png')), filename: 'Mog.png')
+Leviathan = Raid.create(name: "Le Briseur de marées (extrême)",
+  level: 50, difficulty: "extreme", expansion: "A Realm Reborn")
+  Leviathan.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/ArrExtreme/Leviathan.png')), filename: 'Leviathan.png')
+Ramuh = Raid.create(name: "L'Arbre du jugement (extrême)",
+  level: 50, difficulty: "extreme", expansion: "A Realm Reborn")
+  Ramuh.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/ArrExtreme/Ramuh.png')), filename: 'Ramuh.png')
+Shiva = Raid.create(name: "L'Amphithéâtre d'Akh Afah (extrême)",
+  level: 50, difficulty: "extreme", expansion: "A Realm Reborn")
+  Shiva.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/ArrExtreme/Shiva.png')), filename: 'Shiva.png')
+
 puts "Extreme ARR [X]"
 
+Bismarck = Raid.create(name: "L'immensité bleue (extrême)",
+  level: 60, difficulty: "extreme", expansion: "Heavensward")
+  Bismarck.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/HwExtreme/Bismarck.png')), filename: 'Bismarck.png')
+Ravana = Raid.create(name: "Le Nombril (extrême)",
+  level: 60, difficulty: "extreme", expansion: "Heavensward")
+  Ravana.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/HwExtreme/Ravana.png')), filename: 'Ravana.png')
+Thordan = Raid.create(name: "Le Cratère des tisons (extrême)",
+  level: 60, difficulty: "extreme", expansion: "Heavensward")
+  Thordan.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/HwExtreme/Thordan.png')), filename: 'Thordan.png')
+Nidhogg = Raid.create(name: "La Lisière de ronces (extrême)",
+  level: 60, difficulty: "extreme", expansion: "Heavensward")
+  Nidhogg.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/HwExtreme/Nidhogg.png')), filename: 'Nidhogg.png')
+Sephirot = Raid.create(name: "Le Briseur de marées (extrême)",
+  level: 60, difficulty: "extreme", expansion: "Heavensward")
+  Sephirot.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/HwExtreme/Sephirot.png')), filename: 'Sephirot.png')
+Sophia = Raid.create(name: "L'Arbre du jugement (extrême)",
+  level: 60, difficulty: "extreme", expansion: "Heavensward")
+  Sophia.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/HwExtreme/Sophia.png')), filename: 'Sophia.png')
+Zurvan = Raid.create(name: "L'Amphithéâtre d'Akh Afah (extrême)",
+  level: 60, difficulty: "extreme", expansion: "Heavensward")
+  Zurvan.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/HwExtreme/Zurvan.png')), filename: 'Zurvan.png')
 
 puts "Extreme HW [X]"
 
+Susano = Raid.create(name: "La Crique aux tributs (extrême)",
+  level: 70, difficulty: "extreme", expansion: "Stormblood")
+  Susano.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/SbExtreme/Susano.png')), filename: 'Susano.png')
+Lakshmi = Raid.create(name: "Émanation (extrême)",
+  level: 70, difficulty: "extreme", expansion: "Stormblood")
+  Lakshmi.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/SbExtreme/Lakshmi.png')), filename: 'Lakshmi.png')
+Shinryu = Raid.create(name: "Le Domaine de Shinryu (extrême)",
+  level: 70, difficulty: "extreme", expansion: "Stormblood")
+  Shinryu.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/SbExtreme/Shinryu.png')), filename: 'Shinryu.png')
+Tsukuyomi = Raid.create(name: "Castrum Fluminis (extrême)",
+  level: 70, difficulty: "extreme", expansion: "Stormblood")
+  Tsukuyomi.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/SbExtreme/Tsukuyomi.png')), filename: 'Tsukuyomi.png')
+Byakko = Raid.create(name: "La Clairière de Jade (extrême)",
+  level: 70, difficulty: "extrême", expansion: "Stormblood")
+  Byakko.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/SbExtreme/Byakko.png')), filename: 'Byakko.png')
+Suzaku = Raid.create(name: "Le Nid des Lamentations (extrême)",
+  level: 70, difficulty: "extreme", expansion: "Stormblood")
+  Suzaku.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/SbExtreme/Suzaku.png')), filename: 'Suzaku.png')
+Seiryu = Raid.create(name: "L'Îlot des Amertumes (extrême)",
+  level: 70, difficulty: "extreme", expansion: "Stormblood")
+  Seiryu.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/SbExtreme/Seiryu.png')), filename: 'Seiryu.png')
 
 puts "Extreme SB [X]"
 
+Titania = Raid.create(name: "La Valse du Monarque (extrême)",
+  level: 80, difficulty: "extreme", expansion: "Shadowbringers")
+  Titania.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/ShbExtreme/Titania.png')), filename: 'Titania.png')
+Innocence = Raid.create(name: "La Couronne de l'Immaculé (extrême)",
+  level: 80, difficulty: "extreme", expansion: "Shadowbringers")
+  Innocence.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/ShbExtreme/Innocence.png')), filename: 'Innocence.png')
+Hades = Raid.create(name: "Le Râle de l'Agonie (extrême)",
+  level: 80, difficulty: "extreme", expansion: "Shadowbringers")
+  Hades.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/ShbExtreme/Hades.png')), filename: 'Hades.png')
+Varys = Raid.create(name: "Memoria Misera (extrême)",
+  level: 80, difficulty: "extreme", expansion: "Shadowbringers")
+  Varys.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/ShbExtreme/Varys.png')), filename: 'Varys.png')
+WarriorOfLight = Raid.create(name: "Le Trône du Sacrifice (extrême)",
+  level: 80, difficulty: "extrême", expansion: "Shadowbringers")
+  WarriorOfLight.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/ShbExtreme/WarriorOfLight.png')), filename: 'WarriorOfLight.png')
+Emerald = Raid.create(name: "Castrum Marinum (extrême)",
+  level: 80, difficulty: "extreme", expansion: "Shadowbringers")
+  Emerald.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/ShbExtreme/Emerald.png')), filename: 'Emerald.png')
+Diamond = Raid.create(name: "Le Tillac des Cirrus (extrême)",
+  level: 80, difficulty: "extreme", expansion: "Shadowbringers")
+  Diamond.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/ShbExtreme/Diamond.png')), filename: 'Diamond.png')
 
-puts "Extreme SHB [X]"
+  puts "Extreme SHB [X]"
 
+  Zodiark = Raid.create(name: "Le Cratère des Martyrs (extrême)",
+    level: 90, difficulty: "extreme", expansion: "Endwalker")
+    Zodiark.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/SbExtreme/Zodiark.png')), filename: 'Zodiark.png')
+  Hydaelyn = Raid.create(name: "Le Cristal-mère (extrême)",
+    level: 90, difficulty: "extreme", expansion: "Endwalker")
+    Hydaelyn.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/SbExtreme/Hydaelyn.png')), filename: 'Hydaelyn.png')
+  Meteion = Raid.create(name: "Le Répons final (extrême)",
+    level: 90, difficulty: "extreme", expansion: "Endwalker")
+    Meteion.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/SbExtreme/Meteion.png')), filename: 'Meteion.png')
 
 puts "Extreme EW [X]"
 
@@ -297,30 +391,34 @@ E12S = Raid.create(name: "La Promesse d'Éden - Éternité (sadique)",
 
 P1S = Raid.create(name: "Parvis (sadique)",
   level: 90, difficulty: "sadique", expansion: "Endwalker")
-  P1S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Pandaemonium/P1S.jpg')), filename: 'P1S.jpg')
+  P1S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Pandaemonium/P1S.png')), filename: 'P1S.png')
 P2S = Raid.create(name: "Cloaque (sadique)",
   level: 90, difficulty: "sadique", expansion: "Endwalker")
-  P2S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Pandaemonium/P1S.jpg')), filename: 'P1S.jpg')
+  P2S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Pandaemonium/P2S.png')), filename: 'P2S.png')
 P3S = Raid.create(name: "Fournaise (sadique)",
   level: 90, difficulty: "sadique", expansion: "Endwalker")
-  P3S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Pandaemonium/P1S.jpg')), filename: 'P1S.jpg')
+  P3S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Pandaemonium/P3S.png')), filename: 'P3S.png')
 P4S = Raid.create(name: "Abîme (sadique)",
   level: 90, difficulty: "sadique", expansion: "Endwalker")
-  P4S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Pandaemonium/P1S.jpg')), filename: 'P1S.jpg')
+  P4S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Pandaemonium/P4S.png')), filename: 'P4S.png')
 
   puts "Raids Pandaemonium [X]"
 
-UCOB = Raid.create(name: "L'abîme infini de Bahamut",
+UCOB = Raid.create(name: "L'abîme infini de Bahamut (fatal)",
   level: 70, difficulty: "fatal", expansion: "Stormblood")
   UCOB.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Ultimate/UCOB.png')), filename: 'UCOB.png')
 
-UWU = Raid.create(name: "Ultima",
+UWU = Raid.create(name: "La Fantasmagorie d'Ultima (fatal)",
   level: 70, difficulty: "fatal", expansion: "Stormblood")
   UWU.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Ultimate/UWU.png')), filename: 'UWU.png')
 
-TEA = Raid.create(name: "The Epic Of Alexander",
+TEA = Raid.create(name: "L'Odyssée d'Alexander (fatal)",
   level: 80, difficulty: "fatal", expansion: "Shadowbringers")
   TEA.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Ultimate/TEA.png')), filename: 'TEA.png')
+
+DSR = Raid.create(name: "Dragonsong's reprise (ultimate)",
+  level: 80, difficulty: "fatal", expansion: "Shadowbringers")
+  DSR.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Ultimate/DSR.png')), filename: 'DSR.png')
 
   puts "Raids Fatal [X]"
 
