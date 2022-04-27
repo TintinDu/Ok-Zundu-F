@@ -140,22 +140,22 @@ puts "Extreme ARR [X]"
 Bismarck = Raid.create(name: "L'immensité bleue (extrême)",
   level: 60, difficulty: "extreme", expansion: "Heavensward")
   Bismarck.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/HwExtreme/Bismarck.png')), filename: 'Bismarck.png')
-Ravana = Raid.create(name: "Le Nombril (extrême)",
+Ravana = Raid.create(name: "Thok ast Thok (extrême)",
   level: 60, difficulty: "extreme", expansion: "Heavensward")
   Ravana.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/HwExtreme/Ravana.png')), filename: 'Ravana.png')
-Thordan = Raid.create(name: "Le Cratère des tisons (extrême)",
+Thordan = Raid.create(name: "Le règne de Thordan (extrême)",
   level: 60, difficulty: "extreme", expansion: "Heavensward")
   Thordan.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/HwExtreme/Thordan.png')), filename: 'Thordan.png')
-Nidhogg = Raid.create(name: "La Lisière de ronces (extrême)",
+Nidhogg = Raid.create(name: "L'ire de Nidhogg (extrême)",
   level: 60, difficulty: "extreme", expansion: "Heavensward")
   Nidhogg.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/HwExtreme/Nidhogg.png')), filename: 'Nidhogg.png')
-Sephirot = Raid.create(name: "Le Briseur de marées (extrême)",
+Sephirot = Raid.create(name: "Unité de contention S1P7 (extrême)",
   level: 60, difficulty: "extreme", expansion: "Heavensward")
   Sephirot.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/HwExtreme/Sephirot.png')), filename: 'Sephirot.png')
-Sophia = Raid.create(name: "L'Arbre du jugement (extrême)",
+Sophia = Raid.create(name: "Unité de contention P1P6 (extrême)",
   level: 60, difficulty: "extreme", expansion: "Heavensward")
   Sophia.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/HwExtreme/Sophia.png')), filename: 'Sophia.png')
-Zurvan = Raid.create(name: "L'Amphithéâtre d'Akh Afah (extrême)",
+Zurvan = Raid.create(name: "Unité de contention Z1P9 (extrême)",
   level: 60, difficulty: "extreme", expansion: "Heavensward")
   Zurvan.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/HwExtreme/Zurvan.png')), filename: 'Zurvan.png')
 
