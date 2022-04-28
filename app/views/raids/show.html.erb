@@ -18,8 +18,13 @@
 
 </div>
 
+<p class="text-center">D'autres raids qui pourraient vous intéresser :</p>
+
 <div class="cards-index">
   <% Raid.where(expansion: @raid.expansion).each do |raid| %>
-    <%= link_to cl_image_tag(raid.image.key), raid_path(raid), class: "card-raid"%>
+    <div>
+      <%= raid.name %>
+      <%= link_to cl_image_tag(raid.image.key), raid_path(raid), class: "card-raid"%>
+    </div>
   <% end %>
 </div>
