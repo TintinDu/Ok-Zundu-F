@@ -1,5 +1,5 @@
 <div class="cards-job">
   <% @jobs.each do |job| %>
-    <%= link_to cl_image_tag(job.image.key), job_path(job), class: "card-job"%>
+    <%= link_to image_tag(job.image), job_path(job), class: "card-job"%>
   <% end %>
 </div>
