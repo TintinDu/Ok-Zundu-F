@@ -1,5 +1,5 @@
 <div class="card-job">
-  <%= cl_image_tag @job.image.key %>
+  <%= image_tag @job.image %>
   <%= @job.name %>
   <%= @job.role %>
   <%= @job.acronym %>
@@ -11,7 +11,7 @@
       <p><%= job_guide.title %></p>
       <p><%= job_guide.content %></p>
       <p><%= job_guide.rotation %></p>
-      <%= cl_image_tag(job_guide.opener.key) %>
+      <%= image_tag(job_guide.opener) %>
     <% end %>
 
     <br>
