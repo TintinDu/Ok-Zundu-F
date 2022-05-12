@@ -24,7 +24,7 @@
   <% Raid.where(expansion: @raid.expansion).each do |raid| %>
     <div>
       <%= raid.name %>
-      <%= link_to cl_image_tag(raid.image.key), raid_path(raid), class: "card-raid"%>
+      <%= link_to image_tag(raid.image), raid_path(raid), class: "card-raid"%>
     </div>
   <% end %>
 </div>
