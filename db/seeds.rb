@@ -471,7 +471,7 @@ avatar0 = URI.open('https://pbs.twimg.com/profile_images/716730641761570816/Gx4p
 user0= User.create(email: 'gogole@zundu.com', free_company: "Ok'Zundu", password: "123456")
 user0.avatar.attach(io: avatar0, filename: 'Gx4pTC8o_400x400.jpg', content_type: 'image/jpg')
 
-avatar1 = URI.open('https://res.cloudinary.com/dbfbd9xou/image/upload/v1647968420/nm6f6rshjnielwnirl6j.jpg')
+avatar1 = URI.open('https://downloadwap.com/thumbs2/wallpapers/p2ls/2019/anime/26/01e7547513569738.jpg')
 user1= User.create(email: 'reaven@zundu.com', free_company: "Ok'Zundu", password: "123456")
-user1.avatar.attach(io: avatar1, filename: 'nm6f6rshjnielwnirl6j.jpg', content_type: 'image/jpg')
+user1.avatar.attach(io: avatar1, filename: '01e7547513569738.jpg', content_type: 'image/jpg')
 puts "Utilisateurs créés"
