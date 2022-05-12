@@ -8,6 +8,8 @@
                   required: true,
                   autofocus: true,
                   input_html: { autocomplete: "email" }%>
+      <%= f.input :avatar, as: :file %>
+      <%= f.input :free_company, as: :string, label: "Compagnie Libre" %>
       <%= f.input :password,
                   required: true,
                   hint: ("#{@minimum_password_length} caractères au minimum" if @minimum_password_length),
