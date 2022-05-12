@@ -14,7 +14,7 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :raids, only: [:index, :new, :create, :show] do
+  resources :raids, only: [:index, :show] do
     collection do
       get :extreme
       get :sadique
