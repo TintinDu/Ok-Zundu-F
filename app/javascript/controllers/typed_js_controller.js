@@ -6,7 +6,7 @@ export default class extends Controller {
   connect() {
     new Typed(this.contentTarget, {
       strings: ["Bon wipe..."],
-      typeSpeed: 85,
+      typeSpeed: 45,
       loop: false
     });
   }
