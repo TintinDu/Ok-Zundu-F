@@ -2,43 +2,43 @@
   <div data-insert-in-list-target="items">
     <div class="cards-index">
       <% @raids.where(expansion: "A Realm Reborn", difficulty: "sadique").each do |raid| %>
-        <div>
+        <div class="card-raid-center">
           <%= raid.name %>
           <%= link_to image_tag(raid.image), raid_path(raid), class: "card-raid"%>
         </div>
       <% end %>
       <% @raids.where(expansion: "Heavensward", difficulty: "sadique").each do |raid| %>
-        <div>
+        <div class="card-raid-center">
           <%= raid.name %>
           <%= link_to image_tag(raid.image), raid_path(raid), class: "card-raid"%>
         </div>
       <% end %>
       <% @raids.where(expansion: "Stormblood", difficulty: "sadique").each do |raid| %>
-        <div>
+        <div class="card-raid-center">
           <%= raid.name %>
           <%= link_to image_tag(raid.image), raid_path(raid), class: "card-raid"%>
         </div>
       <% end %>
       <% @raids.where(expansion: "Shadowbringers", difficulty: "sadique").each do |raid| %>
-        <div>
+        <div class="card-raid-center">
           <%= raid.name %>
           <%= link_to image_tag(raid.image), raid_path(raid), class: "card-raid"%>
         </div>
       <% end %>
       <% @raids.where(expansion: "Endwalker", difficulty: "sadique").each do |raid| %>
-        <div>
+        <div class="card-raid-center">
           <%= raid.name %>
           <%= link_to image_tag(raid.image), raid_path(raid), class: "card-raid"%>
         </div>
       <% end %>
       <% @raids.where(difficulty: "extreme").each do |raid| %>
-        <div>
+        <div class="card-raid-center">
           <%= raid.name %>
           <%= link_to image_tag(raid.image), raid_path(raid), class: "card-raid"%>
         </div>
       <% end %>
       <% @raids.where(difficulty: "fatal").each do |raid| %>
-        <div>
+        <div class="card-raid-center">
           <%= raid.name %>
           <%= link_to image_tag(raid.image), raid_path(raid), class: "card-raid"%>
         </div>
