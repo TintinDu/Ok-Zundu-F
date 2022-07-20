@@ -44,6 +44,13 @@
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
+  .container-mobile {
+    margin: 0 auto;
+  }
+}
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
   .card-raid {img{
     height: 200px;
     width: 375px;
