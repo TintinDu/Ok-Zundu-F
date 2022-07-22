@@ -1,12 +1,12 @@
 <div class="form-guide" style="margin: 0 auto">
-  <div class="card-job">
+  <div class="card-job-show">
     <%= image_tag @job.image, style: "margin: 0 auto" %>
     <%= @job.name %>
     <%= @job.role %>
     <%= @job.acronym %>
  </div>
 
-  <div class="card-job job-opener">
+  <div class="card-job-show job-opener">
   <% @job.job_guides.each do |job_guide| %>
     <p><%= job_guide.title %></p>
     <p><%= job_guide.content %></p>
