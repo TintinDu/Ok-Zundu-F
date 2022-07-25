@@ -416,8 +416,8 @@ TEA = Raid.create(name: "L'Odyssée d'Alexander (fatal)",
   level: 80, difficulty: "fatal", expansion: "Shadowbringers")
   TEA.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Ultimate/TEA.png')), filename: 'TEA.png')
 
-DSR = Raid.create(name: "Dragonsong's reprise (ultimate)",
-  level: 80, difficulty: "fatal", expansion: "Shadowbringers")
+DSR = Raid.create(name: "La Guerre du Chant des Dragons (fatal)",
+  level: 90, difficulty: "fatal", expansion: "Endwalker")
   DSR.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Ultimate/DSR.png')), filename: 'DSR.png')
 
   puts "Raids Fatal [X]"
