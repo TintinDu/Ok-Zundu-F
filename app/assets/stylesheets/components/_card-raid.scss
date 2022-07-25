@@ -79,6 +79,7 @@
 
 }
 
+
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .container-mobile {
@@ -89,16 +90,16 @@
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .card-raid {img{
-    height: 200px;
-    width: 375px;
+    width: 10em;
+    height: 125px;
   }}
 }
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .card-raid {
-    height: 200px;
-    width: 375px;
+    width: 10em;
+    height: 125px;
   }
 }
 
@@ -145,17 +146,17 @@
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
-  .card-raid-show {img{
-    height: 200px;
-    width: 375px;
+  .card-raid-show { img {
+    width: 10em;
+    height: 125px;
   }}
 }
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .card-raid-show {
-    height: 200px;
-    width: 375px;
+    width: 10em;
+    height: 125px;
   }
 }
 
