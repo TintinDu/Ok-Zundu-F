@@ -2,13 +2,8 @@
   <div class="container">
     <h1>Bienvenue à <strong>Ok Zundu</strong> !</h1>
     <p>Devenez une machine auprès de monstres.</span></p>
-    <% if user_signed_in? %>
-      <%= link_to 'Accéder aux raids', raids_path, class: "btn btn-flat" %>
-      <%= link_to 'Voir les jobs', jobs_path, class: "btn btn-flat" %>
-    <% else %>
-      <%= link_to 'Se connecter', new_user_session_path, class: "btn btn-flat" %>
-      <%= link_to "S'inscrire", new_user_registration_path, class: "btn btn-flat" %>
-    <% end %>
 
+    <%= link_to 'Accéder aux raids', raids_path, class: "btn btn-flat" %>
+    <%= link_to 'Voir les jobs', jobs_path, class: "btn btn-flat" %>
   </div>
 </div>
