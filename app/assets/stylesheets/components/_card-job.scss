@@ -73,8 +73,17 @@
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
+  .card-job-show { img {
+    width: 10em;
+    height: 125px;
+  }}
+}
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
   .card-job { img {
-    width: 15em;
+    width: 10em;
+    height: 125px;
   }}
 }
 
