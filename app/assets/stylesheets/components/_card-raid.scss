@@ -79,6 +79,12 @@
 
 }
 
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  h6 {
+    font-size: 10px;
+  }
+}
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
