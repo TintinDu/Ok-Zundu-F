@@ -389,20 +389,20 @@ E12S = Raid.create(name: "La Promesse d'Éden - Éternité (sadique)",
 
   puts "Raids Eden [X]"
 
-P1S = Raid.create(name: "Parvis (sadique)",
+P1S = Raid.create(name: "Les Limbes du Pandæmonium - Parvis (sadique)",
   level: 90, difficulty: "sadique", expansion: "Endwalker")
   P1S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Pandaemonium/P1S.png')), filename: 'P1S.png')
-P2S = Raid.create(name: "Cloaque (sadique)",
+P2S = Raid.create(name: "Les Limbes du Pandæmonium - Cloaque (sadique)",
   level: 90, difficulty: "sadique", expansion: "Endwalker")
   P2S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Pandaemonium/P2S.png')), filename: 'P2S.png')
-P3S = Raid.create(name: "Fournaise (sadique)",
+P3S = Raid.create(name: "Les Limbes du Pandæmonium - Fournaise (sadique)",
   level: 90, difficulty: "sadique", expansion: "Endwalker")
   P3S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Pandaemonium/P3S.png')), filename: 'P3S.png')
-P4S = Raid.create(name: "Abîme (sadique)",
+P4S = Raid.create(name: "Les Limbes du Pandæmonium - Abîme (sadique)",
   level: 90, difficulty: "sadique", expansion: "Endwalker")
   P4S.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Pandaemonium/P4S.png')), filename: 'P4S.png')
 
-  puts "Raids Pandaemonium [X]"
+  puts "Raids Pandæmonium [X]"
 
 UCOB = Raid.create(name: "L'abîme infini de Bahamut (fatal)",
   level: 70, difficulty: "fatal", expansion: "Stormblood")
