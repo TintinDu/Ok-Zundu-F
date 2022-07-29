@@ -46,6 +46,17 @@
   margin-right: 10px;
 }
 
+@media (min-width: 768px) {
+  .avatar-layout {
+  justify-content: space-between;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  padding: 2px;
+  margin-right: 20px;
+  }
+}
+
 .nav-zundu-link {
   padding: 1px;
   color: $light-gray;
