@@ -1,0 +1,6 @@
+$('#ordered-jobs').append('<%= j render(@jobs) %>');
+<% if @jobs.next_page %>
+  $('.next_page').attr('href','<%= links_path(:page => @jobs.next_page) %>');
+<% else %>
+  $('.more').remove();
+<% end %>

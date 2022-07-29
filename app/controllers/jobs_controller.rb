@@ -19,7 +19,11 @@ class JobsController < ApplicationController
     elsif params[:role]
       @jobs = Job.where(:role => params[:role])
     else
-      @jobs = Job.all
+      @jobs = Job.paginate(page: params[:page], per_page: 6)
+      respond_to do |format|
+        format.html
+        format.js
+      end
     end
   end
 
