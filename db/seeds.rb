@@ -8,8 +8,6 @@ puts "Suppression de tous les guides de raids"
 Guide.destroy_all
 puts "Suppression de tous les guides de jobs"
 JobGuide.destroy_all
-puts "Suppression de tous les utilisateurs"
-User.destroy_all
 
 
 puts "Création des jobs..."
@@ -464,14 +462,3 @@ Guide_pld = JobGuide.create(
 Guide_pld.opener.attach(io: File.open(File.join(Rails.root, 'app/assets/images/Openers/PldOpener.png')), filename: 'PldOpener.png')
 
 puts "Guides de jobs générés"
-
-puts "Création des utilisateurs..."
-
-avatar0 = URI.open('https://pbs.twimg.com/profile_images/716730641761570816/Gx4pTC8o_400x400.jpg')
-user0= User.create(email: 'gogole@zundu.com', free_company: "Ok'Zundu", password: "123456")
-user0.avatar.attach(io: avatar0, filename: 'Gx4pTC8o_400x400.jpg', content_type: 'image/jpg')
-
-avatar1 = URI.open('https://downloadwap.com/thumbs2/wallpapers/p2ls/2019/anime/26/01e7547513569738.jpg')
-user1= User.create(email: 'reaven@zundu.com', free_company: "Ok'Zundu", password: "123456")
-user1.avatar.attach(io: avatar1, filename: '01e7547513569738.jpg', content_type: 'image/jpg')
-puts "Utilisateurs créés"
