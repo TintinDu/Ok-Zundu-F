@@ -7,6 +7,17 @@
   background-attachment: inherit;
 }
 
+@media (min-width: 100px) and (max-width: 768px) {
+  .banner {
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    padding: 40vh 0;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(ffxivmobilebanner.jpg);
+    background-attachment: inherit;
+  }
+}
+
 .banner h1 {
   margin: 0;
   color: white;
