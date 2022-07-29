@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Application is online on:
+http://www.okzundu.xyz
 
-Things you may want to cover:
+or
+
+https://okzundu.herokuapp.com/
 
 * Ruby version
+ruby '3.0.3'
 
-* System dependencies
+* Rails version
+rails '~> 6.1.4', '>= 6.1.4.6'
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Other dependencies
+Check Gemfile and package.json in the root directory.
