@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/faker-ruby/faker.git
-  revision: 91950218dd39119e420ca431fc9fae09b53986c7
+  revision: efc6a90d845a25a34ddbcc9280ed951ecd346163
   branch: master
   specs:
-    faker (2.20.0)
+    faker (2.22.0)
       i18n (>= 1.8.11, < 2)
 
 GIT
@@ -99,6 +99,7 @@ GEM
       rest-client (>= 2.0.0)
     concurrent-ruby (1.1.10)
     crass (1.0.6)
+    date (3.2.2)
     digest (3.1.0)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
@@ -231,11 +232,12 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    stringio (3.0.1)
+    stringio (3.0.2)
     strscan (3.0.4)
     thor (1.2.1)
     tilt (2.0.11)
-    time (0.1.0)
+    time (0.2.0)
+      date
     timeout (0.3.0)
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
@@ -250,7 +252,7 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.8.2)
-    uri (0.10.1)
+    uri (0.11.0)
     web-console (4.2.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
