@@ -1,0 +1,122 @@
+.card-homepage {
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  position: relative;
+  background-color: black;
+
+  img {
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    position: relative;
+  }
+
+  img:hover {
+    opacity: 0.9;
+  }
+
+}
+
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .card-homepage {img{
+    width: 20rem;
+    height: 7rem;
+  }}
+
+  .card-homepage {
+    width: 20rem;
+    height: 7rem;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .card-homepage {img {
+    width: 20rem;
+    height: 7rem;
+  }}
+
+  .card-homepage {
+    width: 20rem;
+    height: 7rem;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .card-homepage {img {
+    width: 20rem;
+    height: 7rem;
+  }}
+
+  .card-homepage {
+    width: 20rem;
+    height: 7rem;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .card-homepage {img {
+    width: 20rem;
+    height: 7rem;
+  }}
+
+  .card-homepage {
+    width: 20rem;
+    height: 7rem;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+  .card-homepage {
+    height: 6em;
+    width: 18em;
+  }
+
+  .card-homepage {img {
+    height: 6em;
+    width: 18em;
+  }}
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1450px) {
+
+  .card-homepage {
+    height: 6em;
+    width: 18em;
+  }
+
+  .card-homepage {img {
+    height: 6em;
+    width: 18em;
+  }}
+}
+
+.container-homepage {
+  margin: 0 auto;
+}
