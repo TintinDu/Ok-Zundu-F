@@ -30,7 +30,7 @@ gem 'bootstrap', '~> 5.2.0'
 # gem 'image_processing', '~> 1.2'
 gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
 gem 'dotenv-rails', groups: [:development, :test]
-gem 'cloudinary', '~> 1.16.0'
+gem 'cloudinary', '~> 1.23.0'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 gem 'image_processing', '~> 1.2'
