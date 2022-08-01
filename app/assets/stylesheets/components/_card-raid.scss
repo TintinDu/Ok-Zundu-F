@@ -83,12 +83,6 @@
   }
 }
 
-// Smallest device
-@media (min-width: 100px) and (max-width: 575px) {
-  .container-mobile {
-    margin: 0 auto;
-  }
-}
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
@@ -106,25 +100,40 @@
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
   .card-raid {img {
-    height: 200px;
-    width: 485px;
+    width: 20rem;
+    height: 7rem;
   }}
+
+  .card-raid {
+    width: 20rem;
+    height: 7rem;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .card-raid {img {
-    height: 200px;
-    width: 380px;
+    width: 20rem;
+    height: 7rem;
   }}
+
+  .card-raid {
+    width: 20rem;
+    height: 7rem;
+  }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .card-raid {img {
-    height: 200px;
-    width: 485px;
+    width: 20rem;
+    height: 7rem;
   }}
+
+  .card-raid {
+    width: 20rem;
+    height: 7rem;
+  }
 }
 
 // Extra large devices (large desktops, 1200px and up)

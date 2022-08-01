@@ -2,13 +2,13 @@
   <h3> Des guides pour vos raids </h3>
 </div>
 
-<div class="cards">
+<div class="cards-homepage" id="cards-homepage-raid">
 
-  <%= link_to " ", raids_path(:difficulty=>"extreme"), class: "card-raid extreme container-mobile" %>
+  <%= link_to " ", raids_path(:difficulty=>"extreme"), class: "card-homepage extreme container-homepage" %>
 
-  <%= link_to " ", raids_path(:difficulty=>"sadique"), class: "card-raid sadique container-mobile" %>
+  <%= link_to " ", raids_path(:difficulty=>"sadique"), class: "card-homepage sadique container-homepage" %>
 
-  <%= link_to " ", raids_path(:difficulty=>"fatal"), class: "card-raid fatal container-mobile" %>
+  <%= link_to " ", raids_path(:difficulty=>"fatal"), class: "card-homepage fatal container-homepage" %>
 
 </div>
 
@@ -16,19 +16,19 @@
   <h3> Des guides pour vos jobs </h3>
 </div>
 
-<div class="cards">
+<div class="cards-homepage">
 
-  <%= link_to " ", jobs_path(:role=>"tank"), class: "card-raid tank container-mobile" %>
+  <%= link_to " ", jobs_path(:role=>"tank"), class: "card-homepage tank container-homepage" %>
 
-  <%= link_to " ", jobs_path(:role=>"healer"), class: "card-raid healer container-mobile" %>
+  <%= link_to " ", jobs_path(:role=>"healer"), class: "card-homepage healer container-homepage" %>
 
-  <%= link_to " ", jobs_path(:role=>"melee"), class: "card-raid melee container-mobile" %>
+  <%= link_to " ", jobs_path(:role=>"melee"), class: "card-homepage melee container-homepage" %>
 
-  <%= link_to " ", jobs_path(:role=>"distance"), class: "card-raid ranged container-mobile" %>
+  <%= link_to " ", jobs_path(:role=>"distance"), class: "card-homepage ranged container-homepage" %>
 
-  <%= link_to " ", jobs_path(:role=>"caster"), class: "card-raid caster container-mobile" %>
+  <%= link_to " ", jobs_path(:role=>"caster"), class: "card-homepage caster container-homepage" %>
 
-  <%= link_to " ", jobs_path, class: "card-raid blue-mage container-mobile" %>
+  <%= link_to " ", jobs_path, class: "card-homepage blue-mage container-homepage" %>
 
 </div>
 
