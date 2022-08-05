@@ -11,7 +11,7 @@ https://okzundu.herokuapp.com/
 ruby '3.0.3'
 
 * Rails version
-rails '~> 6.1.4', '>= 6.1.4.6'
+rails 7.0.3
 
 * Other dependencies
 Check Gemfile and package.json in the root directory.

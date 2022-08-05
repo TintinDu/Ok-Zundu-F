@@ -5,7 +5,7 @@ ruby '3.0.3'
 
 gem 'open-uri'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
-gem 'rails', '~> 6.1.4', '>= 6.1.4.6'
+gem 'rails', '~> 7.0.3'
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 # Use Puma as the app server
@@ -23,14 +23,14 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'autoprefixer-rails', '10.4.7.0'
-gem 'font-awesome-sass', "~> 5.6.1"
+gem 'font-awesome-sass', "~> 6.1.2"
 gem 'simple_form', github: 'heartcombo/simple_form'
 gem 'bootstrap', '~> 5.2.0'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
 gem 'dotenv-rails', groups: [:development, :test]
-gem 'cloudinary', '~> 1.16.0'
+gem 'cloudinary', '~> 1.23.0'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 gem 'image_processing', '~> 1.2'
