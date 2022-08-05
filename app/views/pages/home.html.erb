@@ -3,13 +3,18 @@
 </div>
 
 <div class="cards-homepage" id="cards-homepage-raid">
-
-  <%= link_to " ", raids_path(:difficulty=>"extreme"), class: "card-homepage extreme container-homepage" %>
-
-  <%= link_to " ", raids_path(:difficulty=>"sadique"), class: "card-homepage sadique container-homepage" %>
-
+  <div>
+    <h6 class="text-center">Les raids extrêmes</h6>
+    <%= link_to " ", raids_path(:difficulty=>"extreme"), class: "card-homepage extreme container-homepage" %>
+  </div>
+  <div>
+    <h6 class="text-center">Les raids sadiques</h6>
+    <%= link_to " ", raids_path(:difficulty=>"sadique"), class: "card-homepage sadique container-homepage" %>
+  </div>
+  <div>
+  <h6 class="text-center">Les raids fatals</h6>
   <%= link_to " ", raids_path(:difficulty=>"fatal"), class: "card-homepage fatal container-homepage" %>
-
+  </div>
 </div>
 
 <div class="text-center m-4">
@@ -17,19 +22,30 @@
 </div>
 
 <div class="cards-homepage">
-
+  <div>
+  <h6 class="text-center"> Les tanks </h6>
   <%= link_to " ", jobs_path(:role=>"tank"), class: "card-homepage tank container-homepage" %>
-
+  </div>
+  <div>
+  <h6 class="text-center"> Les soigneurs </h6>
   <%= link_to " ", jobs_path(:role=>"healer"), class: "card-homepage healer container-homepage" %>
-
+  </div>
+  <div>
+  <h6 class="text-center"> Les dps de mêlée </h6>
   <%= link_to " ", jobs_path(:role=>"melee"), class: "card-homepage melee container-homepage" %>
-
+  </div>
+  <div>
+  <h6 class="text-center"> Les dps physiques à distance </h6>
   <%= link_to " ", jobs_path(:role=>"distance"), class: "card-homepage ranged container-homepage" %>
-
+  </div>
+  <div>
+  <h6 class="text-center"> Les dps magiques à distance </h6>
   <%= link_to " ", jobs_path(:role=>"caster"), class: "card-homepage caster container-homepage" %>
-
+  </div>
+  <div>
+  <h6 class="text-center"> Les mages bleus (en construction) </h6>
   <%= link_to " ", jobs_path, class: "card-homepage blue-mage container-homepage" %>
-
+  </div>
 </div>
 
 <div class="container-fluid text-center" style="margin-top: 2em display: inline" data-controller="typed-js">
