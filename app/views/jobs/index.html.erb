@@ -7,7 +7,7 @@
 <br>
 <div class="text-center" style="margin-bottom: 1em" id="load-more">
   <%# <%= link_to 'Voir tous les jobs', jobs_path, class: "btn btn-green" %>
-  <% if @jobs.next_page %>
-    <%= link_to 'Voir plus de jobs', jobs_path(:page => @jobs.next_page), :class => 'btn btn-green next_page' %>
-  <% end %>
+
+  <%= link_to 'Voir plus de jobs', jobs_path, :class => 'btn btn-green next_page' %>
+
 </div>

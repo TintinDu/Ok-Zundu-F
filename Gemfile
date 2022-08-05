@@ -35,7 +35,6 @@ gem 'cloudinary', '~> 1.16.0'
 gem 'bootsnap', '>= 1.4.4', require: false
 gem 'image_processing', '~> 1.2'
 gem "turbolinks_render"
-gem 'will_paginate', '~> 3.3'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
