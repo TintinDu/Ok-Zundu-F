@@ -1,10 +1,13 @@
-<div class="cards-job">
+<div class="cards-job" id="ordered-jobs">
   <% @jobs.each do |job| %>
     <%= link_to image_tag(job.image), job_path(job), class: "card-job job-opener"%>
   <% end %>
 </div>
 
 <br>
-<div class="text-center" style="margin-bottom: 1em">
-  <%= link_to 'Voir tous les jobs', jobs_path, class: "btn btn-green" %>
+<div class="text-center" style="margin-bottom: 1em" id="load-more">
+  <%# <%= link_to 'Voir tous les jobs', jobs_path, class: "btn btn-green" %>
+
+  <%= link_to 'Voir plus de jobs', jobs_path, :class => 'btn btn-green next_page' %>
+
 </div>

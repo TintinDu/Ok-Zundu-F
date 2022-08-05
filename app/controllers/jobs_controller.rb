@@ -3,23 +3,17 @@ class JobsController < ApplicationController
   before_action :set_job, only: [:show ]
 
   def show
-    if params[:query].present?
-      sql_query = "name ILIKE :query OR acronym ILIKE :query"
-      @jobs = Job.where(sql_query, query: "%#{params[:query]}%")
-    elsif params[:role]
-      @jobs = Job.where(:role => params[:role])
-    end
     set_job
   end
 
   def index
     if params[:query].present?
-      sql_query = "name ILIKE :query OR acronym ILIKE :query"
+      sql_query = "name ILIKE :query OR acronym ILIKE :query OR role ILIKE :query"
       @jobs = Job.where(sql_query, query: "%#{params[:query]}%")
     elsif params[:role]
       @jobs = Job.where(:role => params[:role])
     else
-      @jobs = Job.all
+      @jobs = Job.all.limit(6).order("RANDOM()")
     end
   end
 
