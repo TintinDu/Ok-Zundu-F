@@ -25,7 +25,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'autoprefixer-rails', '10.4.7.0'
 gem 'font-awesome-sass', "~> 6.1.2"
 gem 'simple_form', github: 'heartcombo/simple_form'
-gem 'bootstrap', '~> 5.2.0'
+gem 'bootstrap', '~> 5.2.1'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
