@@ -110,7 +110,7 @@ GEM
     erubi (1.10.0)
     execjs (2.8.1)
     ffi (1.15.5)
-    font-awesome-sass (6.1.2)
+    font-awesome-sass (6.2.1)
       sassc (~> 2.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
@@ -279,7 +279,7 @@ DEPENDENCIES
   cloudinary (~> 1.23.0)
   dotenv-rails
   faker!
-  font-awesome-sass (~> 6.1.2)
+  font-awesome-sass (~> 6.2.1)
   image_processing (~> 1.2)
   jbuilder (~> 2.7)
   listen (~> 3.3)
