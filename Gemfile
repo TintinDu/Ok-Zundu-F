@@ -23,7 +23,7 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'autoprefixer-rails', '10.4.7.0'
-gem 'font-awesome-sass', "~> 6.1.2"
+gem 'font-awesome-sass', "~> 6.3.0"
 gem 'simple_form', github: 'heartcombo/simple_form'
 gem 'bootstrap', '~> 5.2.0'
 # Use Active Storage variant
